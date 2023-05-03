@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 export default function Sidebar() {
   return (
     <>
-      <div className="w-28 min-h-full z-20 flex py-6 justify-center fixed top-0 bg-blue-50">
+      <div className="col-span-1 w-28 min-h-full z-20 lg:flex py-6 justify-center fixed top-0 bg-blue-50 hidden">
         <ul className="flex flex-col justify-around">
           <NavLink to="/" aria-selected="true">
             <li className="flex flex-col items-center transition-all">
@@ -24,7 +24,7 @@ export default function Sidebar() {
               <p className="text-[0.8rem] font-medium">Home</p>
             </li>
           </NavLink>
-          <NavLink to="">
+          <NavLink to="/get-started">
             <li className="flex flex-col items-center transition-all">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -44,7 +44,7 @@ export default function Sidebar() {
               <p className="text-[0.8rem]">Get started</p>
             </li>
           </NavLink>
-          <NavLink to="">
+          <NavLink to="/styles">
             <li className="flex flex-col items-center transition-all">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -63,7 +63,7 @@ export default function Sidebar() {
               <p className="text-[0.8rem]">Styles</p>
             </li>
           </NavLink>
-          <NavLink to="">
+          <NavLink to="/components">
             <li className="flex flex-col items-center transition-all">
               <svg
                 xmlns="http://www.w3.org/2000/svg"

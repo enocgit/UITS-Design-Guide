@@ -1,6 +1,6 @@
 export default function HiddenSidebar() {
   return (
-    // hidden (grid)
-    <div className="col-span-1 h-screen bg-transparent w-28"></div>
+    // hidden
+    <div className="min-h-full bg-transparent w-28 hidden lg:block"></div>
   );
 }

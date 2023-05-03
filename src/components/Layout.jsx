@@ -6,9 +6,9 @@ export default function Layout() {
   return (
     <>
       <Sidebar />
-      <div className="grid grid-cols-12">
+      <div className="lg:flex gap-2">
         <HiddenSidebar />
-        <div className="col-span-11">
+        <div className="w-12/12 lg:w-11/12 m-2">
           <Outlet />
         </div>
       </div>
