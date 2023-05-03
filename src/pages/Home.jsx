@@ -1,4 +1,5 @@
 import Button from "../components/Button";
+import ImageCard from "../components/ImageCard";
 import PageHeaderCard from "../components/PageHeaderCard";
 
 export default function Home() {
@@ -22,16 +23,10 @@ export default function Home() {
           <div className="pl-10">
             <h1 className="text-5xl font-medium">Design Guide Updates</h1>
             <div className="grid grid-cols-3 mt-8">
-              <div className="w-full rounded-3xl bg-neutral-100">
-                <div className="bg-yellow-200 w-full h-48 rounded-3xl"></div>
-                <div className="p-5 rounded-3xl">
-                  <h3 className="font-medium text-2xl">Lorem, ipsum dolor</h3>
-                  <p className="mt-1">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
-                    neque?
-                  </p>
-                </div>
-              </div>
+              <ImageCard
+                heading="Animation"
+                bodyText="Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, neque?"
+              />
             </div>
           </div>
         </div>
@@ -42,16 +37,10 @@ export default function Home() {
           <div className="pl-10">
             <h1 className="text-5xl font-medium">Resources</h1>
             <div className="grid grid-cols-3 mt-8">
-              <div className="w-full rounded-3xl bg-neutral-100">
-                <div className="bg-yellow-200 w-full h-48 rounded-3xl"></div>
-                <div className="p-5 rounded-3xl">
-                  <h3 className="font-medium text-2xl">Lorem, ipsum dolor</h3>
-                  <p className="mt-1">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Et,
-                    neque?
-                  </p>
-                </div>
-              </div>
+              <ImageCard
+                heading="Lorem ipsum, dolem"
+                bodyText="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+              />
             </div>
           </div>
         </div>
