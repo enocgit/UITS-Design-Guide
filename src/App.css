@@ -3,6 +3,10 @@
   border-radius: 100%;
 }
 
+.active p {
+  font-weight: 500;
+}
+
 .page-heroes {
   animation-name: move-left;
   animation-duration: 0.8s;

@@ -11,7 +11,7 @@ export default function GetStarted() {
                         iste nemo temporibus odit sequi perferendis."
       >
         {/* Outline */}
-        <div className="xl:grid grid-cols-2 mt-16 gap-2 hidden">
+        <div className="xl:grid grid-cols-2 mt-10 gap-2 hidden">
           {/* Outline-topic */}
           <a href="/src/about.html">
             <div className="bg-white p-5 rounded-2xl relative hover:bottom-1 transition-all">
