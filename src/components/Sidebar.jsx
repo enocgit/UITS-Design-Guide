@@ -1,9 +1,11 @@
+import { NavLink } from "react-router-dom";
+
 export default function Sidebar() {
   return (
     <>
       <div className="w-28 min-h-full z-20 flex py-6 justify-center fixed top-0 bg-blue-50">
         <ul className="flex flex-col justify-around">
-          <a href="/src/index.html" aria-selected="true">
+          <NavLink to="/" aria-selected="true">
             <li className="flex flex-col items-center transition-all">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -21,8 +23,8 @@ export default function Sidebar() {
               </svg>
               <p className="text-[0.8rem] font-medium">Home</p>
             </li>
-          </a>
-          <a href="/src/get-started.html">
+          </NavLink>
+          <NavLink to="">
             <li className="flex flex-col items-center transition-all">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -41,8 +43,8 @@ export default function Sidebar() {
 
               <p className="text-[0.8rem]">Get started</p>
             </li>
-          </a>
-          <a href="/src/styles.html">
+          </NavLink>
+          <NavLink to="">
             <li className="flex flex-col items-center transition-all">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -60,8 +62,8 @@ export default function Sidebar() {
               </svg>
               <p className="text-[0.8rem]">Styles</p>
             </li>
-          </a>
-          <a href="#">
+          </NavLink>
+          <NavLink to="">
             <li className="flex flex-col items-center transition-all">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -84,7 +86,7 @@ export default function Sidebar() {
               </svg>
               <p className="text-[0.8rem] font-medium">Components</p>
             </li>
-          </a>
+          </NavLink>
         </ul>
       </div>
     </>

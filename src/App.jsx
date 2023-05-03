@@ -1,10 +1,10 @@
 import "./App.css";
-import Sidebar from "./components/Sidebar";
+import PageRoutes from "./components/PageRoutes";
 
 function App() {
   return (
     <>
-      <Sidebar />
+      <PageRoutes />
     </>
   );
 }
