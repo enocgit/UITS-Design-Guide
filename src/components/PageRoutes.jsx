@@ -4,6 +4,8 @@ import Home from "../pages/Home";
 import GetStarted from "../pages/GetStarted";
 import Styles from "../pages/Styles";
 import Components from "../pages/Components";
+import Alerts from "../pages/components/Alerts";
+import Bagdes from "../pages/components/Bagdes";
 
 export default function PageRoutes() {
   const elements = useRoutes([
@@ -44,6 +46,14 @@ export default function PageRoutes() {
         {
           index: true,
           element: <Components />,
+        },
+        {
+          path: "alerts",
+          element: <Alerts />,
+        },
+        {
+          path: "badges",
+          element: <Bagdes />,
         },
       ],
     },

@@ -6,7 +6,10 @@ export default function OutlineMain({ children, ...props }) {
         <h1 className="text-5xl font-medium">{props.outlineHeading}</h1>
         {children}
       </div>
-      <div className="xl:sticky top-0 rounded-3xl h-[70vh] xl:h-screen bg-yellow-100 order-1 mt-40 xl:mt-0 xl:order-2"></div>
+      <div
+        className="xl:sticky top-0 rounded-3xl h-[70vh] xl:h-screen bg-slate-50 bg-center bg-contain bg-no-repeat order-1 mt-40 xl:mt-0 xl:order-2"
+        style={{ backgroundImage: `url(${props.backgroundImage})` }}
+      ></div>
     </div>
   );
 }

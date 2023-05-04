@@ -23,7 +23,7 @@ export default function OutlineMainOutlineCard({ children, ...props }) {
   };
 
   return (
-    <NavLink to="">
+    <NavLink to={props.to}>
       <div
         className="outline-parent bg-blue-50  hover:bg-blue-100 px-5 py-8 rounded-2xl mb-2 ml-2 flex gap-6"
         onMouseOver={handleMouseOver}

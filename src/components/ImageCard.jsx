@@ -3,12 +3,14 @@ import { NavLink } from "react-router-dom";
 /* eslint-disable react/prop-types */
 export default function ImageCard(props) {
   return (
-    <NavLink to="" className="text-light">
+    <NavLink to={props.to} className="text-light">
       <div className="w-full rounded-3xl bg-neutral-100">
         <div
-          className="bg-yellow-200 w-full h-48 rounded-3xl"
+          className="bg-blue-50 bg-center bg-contain bg-no-repeat w-full h-48 rounded-3xl"
           style={{
             backgroundColor: props.backgroundColor,
+            backgroundImage: `url(${props.backgroundImage})`,
+            backgroundSize: "22rem",
             height: props.bgHeight,
           }}
         ></div>

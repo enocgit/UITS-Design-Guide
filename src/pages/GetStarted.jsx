@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import buttonImg from "../assets/images/button.png";
 import GetStartedSection from "../components/GetStartedSection";
 import PageHeaderCard from "../components/PageHeaderCard";
 import OutlineMainOutlineCard from "../components/OutlineMainOutlineCard";
@@ -72,7 +72,10 @@ export default function GetStarted() {
           suscipit quaerat!
         </p>
       </GetStartedSection>
-      <GetStartedSection outlineHeading="Using UITS Design Guide for Web">
+      <GetStartedSection
+        outlineHeading="Using UITS Design Guide for Web"
+        backgroundImage={buttonImg}
+      >
         <p className="mt-7">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, sed
           deleniti distinctio aspernatur similique provident facere error? Quas
@@ -107,6 +110,7 @@ export default function GetStarted() {
         <OutlineMainOutlineCard
           heading="Components"
           bodyText="Lorem ipsum dolor sit amet consectetur, adipisicing elit."
+          to="/components"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
