@@ -5,20 +5,33 @@ export default function ComponentSubPage({ children, ...props }) {
   return (
     <>
       <div className="grid grid-cols-2 gap-2 h-96">
-        <div className="flex items-center justify-center bg-blue-50 rounded-lg p-14 component-sub-head">
+        <div
+          className="flex items-center justify-center bg-blue-50 rounded-lg p-14 component-sub-head"
+          style={{ backgroundColor: props.backgroundColor }}
+        >
           <div>
-            <h1 className="font-bold text-6xl">{props.heading}</h1>
-            <p className="mt-2 text-xl">{props.description}</p>
+            <h1
+              className="font-bold text-6xl text-neutral-800"
+              style={{ color: props.color }}
+            >
+              {props.heading}
+            </h1>
+            <p
+              className="mt-2 text-xl text-neutral-800"
+              style={{ color: props.color }}
+            >
+              {props.description}
+            </p>
           </div>
         </div>
-        <div
+        {/* <div
           className="bg-blue-50 rounded-lg bg-center bg-contain bg-no-repeat"
           style={{
             backgroundImage: `url(${props.backgroundImage})`,
             backgroundSize: props.backgroundSize,
             backgroundPosition: props.backgroundPosition,
           }}
-        ></div>
+        ></div> */}
       </div>
 
       <div className="my-20 mx-auto w-9/12">

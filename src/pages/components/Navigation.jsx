@@ -13,6 +13,7 @@ export default function Navigation() {
       subnote=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
         quod eveniet!  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
         quod eveniet!"
+      backgroundColor="#43c3af"
       toPrev="/components/modals"
       toNext="/components/tags"
       prevName="Modals"

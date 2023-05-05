@@ -10,8 +10,9 @@ export default function Bagdes() {
   return (
     <ComponentSubPage
       heading="Badges"
-      description="Display additional information or status on an element."
+      description="Display status on an element."
       backgroundImage={BreadCrumbImg}
+      backgroundColor="#a555df"
       backgroundPosition="right 20rem center"
       // backgroundSize="30rem"
       subnote=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,

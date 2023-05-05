@@ -13,6 +13,7 @@ export default function Alerts() {
       description="Notify users about important information or events."
       // backgroundImage={FormsImg}
       // backgroundSize="30rem"
+      backgroundColor="#d1fae5"
       subnote=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
         quod eveniet!  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
         quod eveniet!"

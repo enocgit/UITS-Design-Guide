@@ -31,7 +31,7 @@ export default function OutlineMainOutlineCard({ children, ...props }) {
       >
         <div>
           <h2 className="text-2xl font-medium">{props.heading}</h2>
-          <p className="pt-2" style={{ fontWeight: "400" }}>
+          <p className="pt-2" style={{ fontWeight: "400", width: props.width }}>
             {props.bodyText}
           </p>
         </div>

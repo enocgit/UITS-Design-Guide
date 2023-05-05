@@ -9,49 +9,46 @@ import Usage from "../../components/Usage";
 export default function Color() {
   return (
     <ComponentSubPage
-      heading="Badges"
-      description="Display additional information or status on an element."
+      heading="Color"
+      description="Guidelines for choosing and using a cohesive color palette."
       backgroundImage={ColorbgImg}
-      backgroundPosition="right 20rem center"
+      backgroundColor="#ea9641"
+      backgroundPosition="center center"
       // backgroundSize="30rem"
-      subnote=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
-        quod eveniet!  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
-        quod eveniet!"
-      toPrev="/components/alerts"
-      toNext="/components/buttons"
-      prevName="Alerts"
-      nextName="Buttons"
+      toPrev="/styles"
+      toNext="/styles/iconography"
+      prevName="Styles"
+      nextName="Iconography"
     >
       <ComponentSub
         heading="Brand colors"
         image={BrandColorsImg}
-        width="10rem"
-        footnote="Indicate the presence of an item or feature."
+        footnote="The primary colors that represent our brand and should be used consistently across  and web pages."
       />
       <ComponentSub
         heading="Shade"
         image={BrandShadeImg}
-        footnote="Display additional information or status about an item or feature."
+        footnote="Variations of the brand colors that can be used to create depth and contrast in design."
       />
       <ComponentSub
         heading="Grayscale"
         image={GrayscaleImg}
-        width="8rem"
-        footnote="Provide visual cue of the status of an item."
+        width="40rem"
+        footnote="A range of neutral colors that can be used as a background or to create contrast with other colors in design."
       />
       <Usage>
         <li>
-          Indicate the presence of unread notifications, new messages, or new
-          updates.
+          Brand colors: To create a cohesive and recognizable brand identity
+          across all web pages and marketing materials.
         </li>
         <li>
-          Display the number of new messages, or the status of a task (e.g.
-          completed, pending, or in progress).
+          Shade: For bright or contrasting colors to draw attention to important
+          calls to action, such as &quot;Sign Up&quot; or &quot;Buy Now&quot;
+          buttons.
         </li>
         <li>
-          Use a combination of default and badge with inner text to indicate the
-          presence of new items or features along with additional information or
-          status.
+          Grayscale: For background or border elements to create contrast and
+          depth in your design.
         </li>
       </Usage>
     </ComponentSubPage>

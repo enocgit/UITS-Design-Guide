@@ -13,6 +13,7 @@ export default function Buttons() {
       subnote=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
         quod eveniet!  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
         quod eveniet!"
+      backgroundColor="#82bfbd"
       toPrev="/components/badges"
       toNext="/components/cards"
       prevName="Badges"

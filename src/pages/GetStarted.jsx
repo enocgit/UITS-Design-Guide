@@ -4,6 +4,8 @@ import PageHeaderCard from "../components/PageHeaderCard";
 import OutlineMainOutlineCard from "../components/OutlineMainOutlineCard";
 import DashboardImg from "../assets/images/dashboard-view.png";
 import DesignImg from "../assets/images/design.png";
+import Accordion from "../components/AccordionChild";
+import GetStartedList from "../components/GetStartedList";
 
 export default function GetStarted() {
   return (
@@ -21,7 +23,7 @@ export default function GetStarted() {
           <a href="#about-udgweb">
             <div className="bg-blue-50 p-5 rounded-2xl relative hover:bottom-1 transition-all">
               <h2 className="text-2xl font-medium">
-                What&apos;s UITS Design Guide for Web?
+                What is UITS Design Guide for Web?
               </h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -63,21 +65,62 @@ export default function GetStarted() {
       </PageHeaderCard>
       <GetStartedSection
         id="about-udgweb"
-        outlineHeading="What's UITS Design Guide for Web?"
+        outlineHeading="What is UITS Design Guide for Web?"
         backgroundImage={DashboardImg}
       >
         <p className="mt-7">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, sed
-          deleniti distinctio aspernatur similique provident facere error? Quas
-          itaque ullam blanditiis delectus, quasi alias facere libero quibusdam
-          autem quam sapiente!
+          The University Information Technology Services (UITS) Design Guide for
+          Web is a comprehensive system for creating consistent designs across
+          web applications.
         </p>
         <p className="mt-6">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur
-          nostrum nemo deserunt ducimus harum. Sint impedit, laudantium porro
-          quod veritatis fugit sed officia architecto. Porro est sequi fuga
-          suscipit quaerat!
+          The purpose of this document is to provide guidelines for designers
+          and developers to follow, ensuring that all projects within the
+          organization adhere to a consistent visual identity.
         </p>
+        <Accordion
+          title="Target audience"
+          body="  This design guide is intended for designers, developers, and contract
+          workers within the organization. By following the guidelines outlined
+          in this document, everyone can ensure that their work is consistent
+          and aligns with the organization's brand."
+          marginTop="1.75rem"
+        />
+        <Accordion
+          title="Scope"
+          body="The UITS Design Guide for Web covers the following elements: typography, color scheme, layout, iconography, components, accessibility, animations, responsive design and multimedia content for web applications. By following the guidelines for each of these elements, all projects within the organization can achieve a consistent look and feel. "
+          marginTop="0.75rem"
+        />
+        <Accordion
+          title="Benefit"
+          body="The UITS Design Guide for Web covers the following elements: typography, color scheme, layout, iconography, components, accessibility, animations, responsive design and multimedia content for web applications. By following the guidelines for each of these elements, all projects within the organization can achieve a consistent look and feel. "
+          marginTop="0.75rem"
+        >
+          <GetStartedList
+            title="Consistency"
+            body="By following the guidelines outlined in this document, all projects within the organization will have a consistent visual identity."
+          />
+          <GetStartedList
+            title="Reduced development time"
+            body="By using pre-defined components and guidelines, designers and developers can work more efficiently."
+          />
+          <GetStartedList
+            title="Improved User Experience"
+            body="A consistent visual identity makes it easier for users to understand and navigate products."
+          />
+          <GetStartedList
+            title="Visual identity for the organization"
+            body="By following the guidelines in this document, the organization can establish a unique and recognizable visual identity."
+          />
+          <GetStartedList
+            title="Communication and Collaboration"
+            body="By providing a common set of guidelines, communication and collaboration between designers and developers can be improved."
+          />
+          <GetStartedList
+            title="Efficiency"
+            body="Using pre-defined components and guidelines can lead to more efficient and effective design and development processes."
+          />
+        </Accordion>
       </GetStartedSection>
       <GetStartedSection
         id="using-udgweb"
@@ -85,10 +128,10 @@ export default function GetStarted() {
         backgroundImage={buttonImg}
       >
         <p className="mt-7">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, sed
-          deleniti distinctio aspernatur similique provident facere error? Quas
-          itaque ullam blanditiis delectus, quasi alias facere libero quibusdam
-          autem quam sapiente!
+          The UITS Design Guide for Web covers the following elements:
+          typography, color scheme, layout, iconography, components,
+          accessibility, animations, responsive design and multimedia content
+          for web applications.
         </p>
         <p className="mt-6 mb-12">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur
@@ -98,8 +141,9 @@ export default function GetStarted() {
         </p>
         <OutlineMainOutlineCard
           heading="Styles"
-          bodyText="Lorem ipsum dolor sit amet consectetur, adipisicing elit."
+          bodyText="Customizable design elements to enhance the look and feel of web applications."
           to="/styles"
+          width="88%"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -118,7 +162,8 @@ export default function GetStarted() {
         </OutlineMainOutlineCard>
         <OutlineMainOutlineCard
           heading="Components"
-          bodyText="Lorem ipsum dolor sit amet consectetur, adipisicing elit."
+          bodyText="Components are the building blocks for creating user interfaces for web applications.
+"
           to="/components"
         >
           <svg
@@ -161,7 +206,9 @@ export default function GetStarted() {
         </p>
         <OutlineMainOutlineCard
           heading="Styles & Customization"
-          bodyText="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+          bodyText="Customizable design elements to enhance the look and feel of web applications."
+          to="/styles"
+          width="88%"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

@@ -12,6 +12,7 @@ export default function Links() {
       subnote=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
         quod eveniet!  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
         quod eveniet!"
+      backgroundColor="#79bde3"
       toPrev="/components/forms"
       toNext="/components/modals"
       prevName="Forms"

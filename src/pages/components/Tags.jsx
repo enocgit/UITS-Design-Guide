@@ -13,6 +13,7 @@ export default function Tags() {
       subnote=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
         quod eveniet!  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
         quod eveniet!"
+      backgroundColor="#f5f3f7"
       toPrev="/components/navigation"
       toNext="/components/togglers"
       prevName="Navigation"

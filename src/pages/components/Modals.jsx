@@ -13,6 +13,8 @@ export default function Modals() {
       subnote=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
         quod eveniet!  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
         quod eveniet!"
+      backgroundColor="#ff4b4b"
+      color="#fff"
       toPrev="/components/links"
       toNext="/components/navigation"
       prevName="Links"

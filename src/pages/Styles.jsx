@@ -29,9 +29,9 @@ export default function Styles() {
             backgroundImage={AlertColorsImg}
           />
           <ImageCard
-            heading="Icon"
+            heading="Iconography"
             bodyText=" Guidance on using icons effectively to enhance interfaces and improve usability."
-            to="/styles/icon"
+            to="/styles/iconography"
             bgHeight="20rem"
             backgroundImage={HeroiconsSideImg}
           />

@@ -17,7 +17,7 @@ import Tags from "../pages/components/Tags";
 import Togglers from "../pages/components/Togglers";
 import Animation from "../pages/styles/Animation";
 import Color from "../pages/styles/Color";
-import Icon from "../pages/styles/Icon";
+import Iconography from "../pages/styles/Iconography";
 import Typography from "../pages/styles/Typography";
 
 export default function PageRoutes() {
@@ -34,7 +34,7 @@ export default function PageRoutes() {
     },
     {
       path: "/get-started",
-      element: <Layout />,
+      element: <Layout backgroundColor="" />,
       children: [
         {
           index: true,
@@ -59,8 +59,8 @@ export default function PageRoutes() {
           element: <Color />,
         },
         {
-          path: "icon",
-          element: <Icon />,
+          path: "iconography",
+          element: <Iconography />,
         },
         {
           path: "typography",

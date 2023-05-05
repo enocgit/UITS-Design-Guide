@@ -11,6 +11,7 @@ export default function Cards() {
       heading="Cards"
       description="Group related information and actions together."
       backgroundImage={DashboardImg}
+      backgroundColor="#fff3eb"
       backgroundPosition="bottom right 10rem"
       subnote=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
         quod eveniet!  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,

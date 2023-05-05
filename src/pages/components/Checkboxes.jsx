@@ -12,6 +12,7 @@ export default function Checkboxes() {
       subnote=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
         quod eveniet!  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
         quod eveniet!"
+      backgroundColor="#e86e87"
       toPrev="/components/cards"
       toNext="/components/forms"
       prevName="Cards"

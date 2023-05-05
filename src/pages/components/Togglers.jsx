@@ -14,6 +14,7 @@ export default function Togglers() {
       subnote=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
         quod eveniet!  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
         quod eveniet!"
+      backgroundColor="#dbd6e1"
       toPrev="/components/tags"
       prevName="tags"
     >

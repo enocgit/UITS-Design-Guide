@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import { Outlet } from "react-router-dom";
 import HiddenSidebar from "./HiddenSidebar";
 import Sidebar from "./Sidebar";
