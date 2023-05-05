@@ -9,8 +9,7 @@ export default function Home() {
         backgroundColor="rgb(253, 230, 138)"
         marginBottom="5rem"
         heroTitle="UITS Design Guide for Web"
-        heroSubtitle="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto
-                        iste nemo temporibus odit sequi perferendis."
+        heroSubtitle="A comprehensive guide to help you design captivating and effective web applications"
       >
         <Button
           buttonText="Get started"

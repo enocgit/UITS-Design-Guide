@@ -7,7 +7,7 @@ export default function ComponentSub(props) {
       <div className="p-10 bg-blue-50 border border-neutral-300 rounded-lg flex items-center justify-center">
         <img
           src={props.image}
-          alt="alerts (info)"
+          alt=""
           className="w-96"
           style={{ width: props.width }}
         />

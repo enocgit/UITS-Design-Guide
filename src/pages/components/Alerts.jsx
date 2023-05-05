@@ -9,6 +9,10 @@ import Usage from "../../components/Usage";
 export default function Alerts() {
   return (
     <ComponentSubPage
+      heading="Alerts"
+      description="Notify users about important information or events."
+      // backgroundImage={FormsImg}
+      // backgroundSize="30rem"
       subnote=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
         quod eveniet!  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
         quod eveniet!"
@@ -20,36 +24,35 @@ export default function Alerts() {
       <ComponentSub
         heading="Info"
         image={AlertsInfoImg}
-        footnote=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
-        quod eveniet!"
+        footnote=" Provides important information to the user."
       />
       <ComponentSub
         heading="Success"
         image={AlertsSuccessImg}
-        footnote=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
-        quod eveniet!"
+        footnote="Indicates that an action has been completed successfully."
       />
       <ComponentSub
         heading="Danger"
         image={AlertsDangerImg}
-        footnote=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
-        quod eveniet!"
+        footnote=" Indicates that an error or critical issue has occurred."
       />
       <ComponentSub
         heading="Warning"
         image={AlertsWarningImg}
-        footnote=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
-        quod eveniet!"
+        footnote="Warns the user of a potential problem or issue."
       />
       <Usage>
         <li>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dicta.
+          Notify users of successful or failed actions, such as form submissions
+          or account updates.
         </li>
         <li>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dicta.
+          Display system-wide alerts, such as maintenance notifications or
+          service disruptions.
         </li>
         <li>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, dicta.
+          Alert users to security concerns, such as password breaches or
+          suspicious login attempts.
         </li>
       </Usage>
     </ComponentSubPage>

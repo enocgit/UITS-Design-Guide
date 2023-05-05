@@ -2,21 +2,24 @@ import buttonImg from "../assets/images/button.png";
 import GetStartedSection from "../components/GetStartedSection";
 import PageHeaderCard from "../components/PageHeaderCard";
 import OutlineMainOutlineCard from "../components/OutlineMainOutlineCard";
+import DashboardImg from "../assets/images/dashboard-view.png";
+import DesignImg from "../assets/images/design.png";
 
 export default function GetStarted() {
   return (
     <>
       <PageHeaderCard
+        color="rgb(30 58 138)"
+        subtitleColor="rgb(30 58 138)"
         backgroundColor="rgb(221 214 254)"
         heroTitle="Get Started"
-        heroSubtitle="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto
-                        iste nemo temporibus odit sequi perferendis."
+        heroSubtitle="A guide to help you get started with designing web applications."
       >
         {/* Outline */}
         <div className="xl:grid grid-cols-2 mt-10 gap-2 hidden">
           {/* Outline-topic */}
-          <a href="/src/about.html">
-            <div className="bg-white p-5 rounded-2xl relative hover:bottom-1 transition-all">
+          <a href="#about-udgweb">
+            <div className="bg-blue-50 p-5 rounded-2xl relative hover:bottom-1 transition-all">
               <h2 className="text-2xl font-medium">
                 What&apos;s UITS Design Guide for Web?
               </h2>
@@ -27,8 +30,8 @@ export default function GetStarted() {
             </div>
           </a>
           {/* Outline-topic */}
-          <a href="/src/using.html">
-            <div className="bg-white p-5 rounded-2xl relative hover:bottom-1 transition-all">
+          <a href="#using-udgweb">
+            <div className="bg-blue-50 p-5 rounded-2xl relative hover:bottom-1 transition-all">
               <h2 className="text-2xl font-medium">Using UDGWeb</h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -37,8 +40,8 @@ export default function GetStarted() {
             </div>
           </a>
           {/* Outline-topic */}
-          <a href="/src/design.html">
-            <div className="bg-white p-5 rounded-2xl relative hover:bottom-1 transition-all">
+          <a href="#design">
+            <div className="bg-blue-50 p-5 rounded-2xl relative hover:bottom-1 transition-all">
               <h2 className="text-2xl font-medium">Design</h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -48,7 +51,7 @@ export default function GetStarted() {
           </a>
           {/* Outline-topic */}
           <a href="/src/develop.html">
-            <div className="bg-white p-5 rounded-2xl relative hover:bottom-1 transition-all">
+            <div className="bg-blue-50 p-5 rounded-2xl relative hover:bottom-1 transition-all">
               <h2 className="text-2xl font-medium">Develop</h2>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -58,7 +61,11 @@ export default function GetStarted() {
           </a>
         </div>
       </PageHeaderCard>
-      <GetStartedSection outlineHeading="What's UITS Design Guide for Web?">
+      <GetStartedSection
+        id="about-udgweb"
+        outlineHeading="What's UITS Design Guide for Web?"
+        backgroundImage={DashboardImg}
+      >
         <p className="mt-7">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, sed
           deleniti distinctio aspernatur similique provident facere error? Quas
@@ -73,6 +80,7 @@ export default function GetStarted() {
         </p>
       </GetStartedSection>
       <GetStartedSection
+        id="using-udgweb"
         outlineHeading="Using UITS Design Guide for Web"
         backgroundImage={buttonImg}
       >
@@ -91,6 +99,7 @@ export default function GetStarted() {
         <OutlineMainOutlineCard
           heading="Styles"
           bodyText="Lorem ipsum dolor sit amet consectetur, adipisicing elit."
+          to="/styles"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -133,7 +142,11 @@ export default function GetStarted() {
           </svg>
         </OutlineMainOutlineCard>
       </GetStartedSection>
-      <GetStartedSection outlineHeading="Design">
+      <GetStartedSection
+        id="design"
+        outlineHeading="Design"
+        backgroundImage={DesignImg}
+      >
         <p className="mt-7">
           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, sed
           deleniti distinctio aspernatur similique provident facere error? Quas
