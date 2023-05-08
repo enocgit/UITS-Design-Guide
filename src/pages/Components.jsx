@@ -30,6 +30,7 @@ export default function Components() {
             heading="Alerts"
             bodyText="Notify users about important information or events."
             backgroundImage={AlertImg}
+            backgroundSize="20rem"
             to="alerts"
           />
         </div>
@@ -39,6 +40,7 @@ export default function Components() {
             heading="Badges"
             bodyText="Display additional information or status on an element."
             backgroundImage={BadgeImg}
+            backgroundSize="6rem"
             to="badges"
           />
         </div>
@@ -50,7 +52,7 @@ export default function Components() {
             heading="Buttons"
             bodyText="Trigger an action or navigate to another page."
             backgroundImage={ButtonImg}
-            backgroundSize="20rem"
+            backgroundSize="10rem"
             to="buttons"
           />
         </div>
@@ -72,6 +74,7 @@ export default function Components() {
             heading="Checkbox and Radio"
             bodyText="Allow users to select one or multiple options."
             backgroundImage={CheckboxImg}
+            backgroundSize="10rem"
             to="checkboxes"
           />
         </div>
@@ -91,6 +94,7 @@ export default function Components() {
             heading="Links"
             bodyText="Navigate to another page or resource."
             backgroundImage={LinkImg}
+            backgroundSize="20rem"
             to="links"
           />
         </div>
@@ -122,6 +126,7 @@ export default function Components() {
             heading="Tags"
             bodyText=" Categorize or label content."
             backgroundImage={TagImg}
+            backgroundSize="10rem"
             to="tags"
           />
         </div>
@@ -133,7 +138,7 @@ export default function Components() {
             heading="Togglers"
             bodyText=" Enable or disable a setting or option."
             backgroundImage={TogglerImg}
-            backgroundSize="10rem"
+            backgroundSize="6rem"
             to="togglers"
           />
         </div>

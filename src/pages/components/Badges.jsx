@@ -13,6 +13,7 @@ export default function Bagdes() {
       description="Display status on an element."
       backgroundImage={BreadCrumbImg}
       backgroundColor="#a555df"
+      color="#fff"
       backgroundPosition="right 20rem center"
       // backgroundSize="30rem"
       subnote=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,

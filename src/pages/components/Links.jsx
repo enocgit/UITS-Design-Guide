@@ -13,6 +13,7 @@ export default function Links() {
         quod eveniet!  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
         quod eveniet!"
       backgroundColor="#79bde3"
+      color="#555"
       toPrev="/components/forms"
       toNext="/components/modals"
       prevName="Forms"

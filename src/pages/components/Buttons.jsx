@@ -14,6 +14,7 @@ export default function Buttons() {
         quod eveniet!  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
         quod eveniet!"
       backgroundColor="#82bfbd"
+      color="#fbfbfb"
       toPrev="/components/badges"
       toNext="/components/cards"
       prevName="Badges"
@@ -24,6 +25,10 @@ export default function Buttons() {
         image={ButtonSmallImg}
         width="10rem"
         footnote="A standard button for triggering an action or navigating to another page."
+        hexValue="#CE5E5E"
+        bgColorClip="#CE5E5E"
+        marginValue="5px 8px"
+        borderRadiusValue="5px"
       />
       <ComponentSub
         heading="Button with icon"
