@@ -1,10 +1,27 @@
 /* eslint-disable react/prop-types */
 
-import { useState } from "react";
+import { Children, useState } from "react";
 import ComponentModal from "./ComponentModal";
 
-export default function ComponentSub(props) {
+export default function ComponentSub({ children, ...props }) {
   const [show, setShow] = useState(false);
+
+  // Function to handle clipboard content
+  const handleCopyClick = () => {
+    const compschildren = Children.toArray(children); // stores all child of the particular ComponentSub
+    const finalCopyArray = [];
+    let finalCopyString = "";
+    compschildren.map((child) => {
+      finalCopyArray.push(`${child.props.propertyName}: ${child.props.value};`);
+      navigator.clipboard.writeText(
+        `${child.props.propertyName}: ${child.props.value};`
+      );
+    });
+    finalCopyArray.forEach((clipcontent) => {
+      finalCopyString += `${clipcontent}\n`;
+    });
+    navigator.clipboard.writeText(finalCopyString); // stores value in clipboard
+  };
 
   function onClick() {
     setShow((prevShow) => !prevShow);
@@ -12,6 +29,7 @@ export default function ComponentSub(props) {
   function onClose() {
     setShow(false);
   }
+
   return (
     <div onClick={props.handleClick}>
       <h2 className="font-medium text-2xl mb-5 text-neutral-800">
@@ -31,11 +49,15 @@ export default function ComponentSub(props) {
         show={show}
         onClose={onClose} // handled by modal component
         heading={props.heading}
-        hexValue={props.hexValue}
-        bgColorClip={props.bgColorClip}
-        marginValue={props.marginValue}
-        borderRadiusValue={props.borderRadiusValue}
-      />
+        handleCopyClick={handleCopyClick}
+        // propertyName={props.propertyName}
+        // value={props.value}
+        // bgColorVal={props.bgColorVal}
+        // marginValue={props.marginValue}
+        // borderRadiusValue={props.borderRadiusValue}
+      >
+        {children}
+      </ComponentModal>
     </div>
   );
 }

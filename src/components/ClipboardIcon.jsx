@@ -1,4 +1,5 @@
-export default function ClipboardIcon() {
+/* eslint-disable react/prop-types */
+export default function ClipboardIcon(props) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -6,7 +7,9 @@ export default function ClipboardIcon() {
       viewBox="0 0 24 24"
       strokeWidth={1.5}
       stroke="#aaa"
-      className="w-4 h-4 relative bottom-1"
+      className="w-4 h-4 relative bottom-1 hover:cursor-pointer"
+      style={{ position: "absolute", right: props.right, top: props.top }}
+      onClick={props.handleCopyClick}
     >
       <path
         strokeLinecap="round"
