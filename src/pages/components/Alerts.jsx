@@ -22,26 +22,38 @@ export default function Alerts() {
       prevName="Components"
       nextName="Badges"
     >
+      {/* INFO */}
       <ComponentSub
         heading="Info"
         image={AlertsInfoImg}
         footnote=" Provides important information to the user."
-      />
+      ></ComponentSub>
+      {/* END OF INFO */}
+
+      {/* SUCCESS */}
       <ComponentSub
         heading="Success"
         image={AlertsSuccessImg}
         footnote="Indicates that an action has been completed successfully."
-      />
+      ></ComponentSub>
+      {/* END OF SUCCESS */}
+
+      {/* DANGER */}
       <ComponentSub
         heading="Danger"
         image={AlertsDangerImg}
         footnote=" Indicates that an error or critical issue has occurred."
-      />
+      ></ComponentSub>
+      {/* END OF DANGER */}
+
+      {/* WARNING  */}
       <ComponentSub
         heading="Warning"
         image={AlertsWarningImg}
         footnote="Warns the user of a potential problem or issue."
-      />
+      ></ComponentSub>
+      {/*  END OF WARNING */}
+
       <Usage>
         <li>
           Notify users of successful or failed actions, such as form submissions

@@ -19,16 +19,22 @@ export default function Links() {
       prevName="Forms"
       nextName="Modals"
     >
+      {/* DEFAULT */}
       <ComponentSub
         heading="Default"
         image={LinkImg}
         footnote="A clickable text element that navigates the user to another page or resource."
-      />
+      ></ComponentSub>
+      {/* END OF DEFAULT */}
+
+      {/* GRADIENT */}
       <ComponentSub
         heading="Gradient"
         image={LinkImg}
         footnote="- A clickable text element with a gradient color scheme that can add visual interest to your design."
-      />
+      ></ComponentSub>
+      {/* END OF GRADEINT */}
+
       <Usage>
         <li>
           Navigation menus, Call-to-action (CTA) buttons, Links to social media

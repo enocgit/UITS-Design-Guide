@@ -2,6 +2,7 @@ import ImageCard from "../components/ImageCard";
 import PageHeaderCard from "../components/PageHeaderCard";
 import AlertColorsImg from "../assets/images/color/alert.png";
 import HeroiconsSideImg from "../assets/images/icon/heroicons-solid.png";
+import FathomImg from "../assets/images/typography/cover.png";
 
 export default function Styles() {
   return (
@@ -40,7 +41,7 @@ export default function Styles() {
             bodyText="Best practices for selecting and pairing fonts to create a visually appealing interfaces."
             to="/styles/typography"
             bgHeight="20rem"
-            backgroundImage=""
+            backgroundImage={FathomImg}
           />
         </div>
       </section>

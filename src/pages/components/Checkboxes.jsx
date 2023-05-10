@@ -3,6 +3,8 @@ import ComponentSubPage from "../../components/ComponentSubPage";
 import Usage from "../../components/Usage";
 import CheckBoxImg from "../../assets/images/checkboxes/checkbox.png";
 import RadioImg from "../../assets/images/checkboxes/radio.png";
+import ComponentImage from "../../components/ComponentImage";
+import ComponentClipBoard from "../../components/ComponentClipBoard";
 
 export default function Checkboxes() {
   return (
@@ -18,16 +20,27 @@ export default function Checkboxes() {
       prevName="Cards"
       nextName="Forms"
     >
+      {/* CHECKBOX */}
       <ComponentSub
-        heading="Checkbox"
-        image={CheckBoxImg}
         footnote="A form component used for selecting one or more options."
-      />
+        heading="Checkbox"
+      >
+        <ComponentImage heading="Checkbox" image={CheckBoxImg}>
+          <ComponentClipBoard />
+        </ComponentImage>
+      </ComponentSub>
+      {/* END OF CHECKBOX */}
+
+      {/* RADIO */}
       <ComponentSub
-        heading="Radio"
-        image={RadioImg}
         footnote="A form component used for selecting only one option from a group."
-      />
+        heading="Radio"
+      >
+        <ComponentImage heading="Radio" image={RadioImg}>
+          <ComponentClipBoard />
+        </ComponentImage>
+      </ComponentSub>
+      {/* END OF RADIO */}
       <Usage>
         <li>
           Checkbox: Selecting items for purchase, subscribing to a newsletter,

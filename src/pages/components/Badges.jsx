@@ -5,6 +5,8 @@ import StatusColorsImg from "../../assets/images/badges/status-colors.png";
 import ComponentSub from "../../components/ComponentSub";
 import Usage from "../../components/Usage";
 import BreadCrumbImg from "../../assets/images/navigation/breadcrumb.png";
+import ComponentImage from "../../components/ComponentImage";
+import ComponentClipBoard from "../../components/ComponentClipBoard";
 
 export default function Bagdes() {
   return (
@@ -24,23 +26,43 @@ export default function Bagdes() {
       prevName="Alerts"
       nextName="Buttons"
     >
+      {/* DEFAULT BADGES */}
       <ComponentSub
-        heading="Default badges"
-        image={BadgeImg}
-        width="10rem"
         footnote="Indicate the presence of an item or feature."
-      />
+        heading="Default badges"
+      >
+        <ComponentImage heading="Default badges" image={BadgeImg} width="10rem">
+          <ComponentClipBoard />
+        </ComponentImage>
+      </ComponentSub>
+      {/* END OF DEFAULT BADGES */}
+
+      {/* DEFAULT BADGES WITH INNER TEXT */}
       <ComponentSub
-        heading="Badges with inner text"
-        image={BadgeTextImg}
         footnote="Display additional information or status about an item or feature."
-      />
+        heading="Badges with inner text"
+      >
+        <ComponentImage heading="Badges with inner text" image={BadgeTextImg}>
+          <ComponentClipBoard />
+        </ComponentImage>
+      </ComponentSub>
+      {/* END OF DEFAULT BADGES WITH INNER TEXT */}
+
+      {/* STATUS COLORS */}
       <ComponentSub
-        heading="Status colors"
-        image={StatusColorsImg}
-        width="8rem"
         footnote="Provide visual cue of the status of an item."
-      />
+        heading="Status colors"
+      >
+        <ComponentImage
+          image={StatusColorsImg}
+          width="8rem"
+          heading="Status colors"
+        >
+          <ComponentClipBoard />
+        </ComponentImage>
+      </ComponentSub>
+      {/* END OF STATUS COLORS */}
+
       <Usage>
         <li>
           Indicate the presence of unread notifications, new messages, or new

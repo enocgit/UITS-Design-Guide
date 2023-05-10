@@ -5,6 +5,8 @@ import DisabledImg from "../../assets/images/forms/disabled.png";
 import EnabledImg from "../../assets/images/forms/enabled.png";
 import InputIconImg from "../../assets/images/forms/input-icon.png";
 import FormsImg from "../../assets/images/Form.png";
+import ComponentClipBoard from "../../components/ComponentClipBoard";
+import ComponentImage from "../../components/ComponentImage";
 
 export default function Forms() {
   return (
@@ -22,24 +24,131 @@ export default function Forms() {
       prevName="Checkboxes"
       nextName="Links"
     >
+      {/* DEFAULT FIELD */}
       <ComponentSub
-        heading="Default"
-        image={EnabledImg}
-        width="30rem"
         footnote="Accepts user input and can be used for various types of form elements such as name, email, password, and more."
-      />
+        heading="Default"
+      >
+        <ComponentImage image={EnabledImg} width="30rem" heading="Default">
+          <ComponentClipBoard
+            name="Background color"
+            propertyName="background-color"
+            bgColorVal="#FFFFFF"
+            value="#FFFFFF"
+          />
+          <ComponentClipBoard
+            name="Color"
+            propertyName="color"
+            value="#A2A5B9"
+            bgColorVal="#A2A5B9"
+          />
+          <ComponentClipBoard
+            name="Border"
+            propertyName="border"
+            value="1px solid #D1D5DB"
+            bgColorVal="#A2A5B9"
+            borderColorVal="#D1D5DB"
+          />
+          <ComponentClipBoard
+            name="Border radius"
+            propertyName="border-radius"
+            value="0.375rem"
+          />
+          <ComponentClipBoard
+            name="Font size"
+            propertyName="font-size"
+            value="0.775rem"
+          />
+        </ComponentImage>
+      </ComponentSub>
+      {/* END OF DEFAULT FIELD */}
+
+      {/* DISABLED FIELD */}
       <ComponentSub
-        heading="Disbaled field"
-        image={DisabledImg}
-        width="30rem"
         footnote=" Prevents user input and can be used to display information or to indicate that the input is not currently available for editing."
-      />
+        heading="Disbaled field"
+      >
+        <ComponentImage
+          image={DisabledImg}
+          width="30rem"
+          heading="Disbaled field"
+        >
+          <ComponentClipBoard
+            name="Background color"
+            propertyName="background-color"
+            bgColorVal="#F9FAFB"
+            value="#F9FAFB"
+          />
+          <ComponentClipBoard
+            name="Color"
+            propertyName="color"
+            value="#A2A5B9"
+            bgColorVal="#A2A5B9"
+          />
+          <ComponentClipBoard
+            name="Border"
+            propertyName="border"
+            value="1px solid #D1D5DB"
+            bgColorVal="#A2A5B9"
+            borderColorVal="#D1D5DB"
+          />
+          <ComponentClipBoard
+            name="Border radius"
+            propertyName="border-radius"
+            value="0.375rem"
+          />
+          <ComponentClipBoard
+            name="Font size"
+            propertyName="font-size"
+            value="0.775rem"
+          />
+        </ComponentImage>
+      </ComponentSub>
+      {/* END OF DISABLED FIELD */}
+
+      {/* FIELD WITH ICON */}
       <ComponentSub
-        heading="Field with icon"
-        image={InputIconImg}
-        width="30rem"
         footnote="Provide a visual cue or hint to the user about the expected input or action."
-      />
+        heading="Field with icon"
+      >
+        <ComponentImage
+          image={InputIconImg}
+          width="30rem"
+          heading="Field with icon"
+        >
+          <ComponentClipBoard
+            name="Background color"
+            propertyName="background-color"
+            bgColorVal="#F9FAFB"
+            value="#F9FAFB"
+          />
+          <ComponentClipBoard
+            name="Color"
+            propertyName="color"
+            value="#A2A5B9"
+            bgColorVal="#A2A5B9"
+          />
+          <ComponentClipBoard
+            name="Border"
+            propertyName="border"
+            value="1px solid #D1D5DB"
+            bgColorVal="#A2A5B9"
+            borderColorVal="#D1D5DB"
+          />
+          <ComponentClipBoard
+            name="Border radius"
+            propertyName="border-radius"
+            value="0.375rem"
+          />
+          <ComponentClipBoard
+            name="Font size"
+            propertyName="font-size"
+            value="0.775rem"
+          />
+        </ComponentImage>
+      </ComponentSub>
+      {/* END OF FIELD WITH ICON */}
+
       <Usage>
         <li>
           Default input field: Login form, sign-up form, search bar, contact

@@ -26,8 +26,8 @@ export default function GetStarted() {
                 What is UITS Design Guide for Web?
               </h2>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Repellendus, ipsum?
+                Learn about the comprehensive system for creating consistent
+                designs across web applications.
               </p>
             </div>
           </a>
@@ -129,9 +129,26 @@ export default function GetStarted() {
       >
         <p className="mt-7">
           The UITS Design Guide for Web covers the following elements:
-          typography, color scheme, layout, iconography, components,
-          accessibility, animations, responsive design and multimedia content
-          for web applications.
+          <span className="underline"> typography</span>,{" "}
+          <span className="underline">iconography</span>
+          <span>, </span>
+          <span className="underline">components</span>
+          <span>, </span>
+          <span className="underline">accessibility</span>
+          <span>, </span>
+          <span className="underline">animations</span>
+          <span>, </span>
+          <span className="underline">color scheme</span>
+          <span>, </span>
+          <span className="underline"></span>
+          <span className="underline">layout</span>
+          <span>, </span>
+          <span className="underline">responsive</span>
+          <span>, </span>
+          <span className="underline">design</span>
+          <span> and </span>
+          <span className="underline">multimedia</span>
+          <span> content for web applications.</span>
         </p>
         <p className="mt-6 mb-12">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur

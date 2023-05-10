@@ -25,3 +25,6 @@ dist-ssr
 
 # text files
 *.txt
+
+# test css
+test.css

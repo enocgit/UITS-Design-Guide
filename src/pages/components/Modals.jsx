@@ -4,6 +4,8 @@ import Usage from "../../components/Usage";
 import DefaultModalImg from "../../assets/images/modals/default.png";
 import PopupModalImg from "../../assets/images/modals/popup.png";
 import LoginModalImg from "../../assets/images/modals/login.png";
+import ComponentImage from "../../components/ComponentImage";
+import ComponentClipBoard from "../../components/ComponentClipBoard";
 
 export default function Modals() {
   return (
@@ -20,21 +22,39 @@ export default function Modals() {
       prevName="Links"
       nextName="Navigation"
     >
+      {/* DEFAULT MODAL */}
       <ComponentSub
-        heading="Defailt modal"
-        image={DefaultModalImg}
         footnote="A modal that can be customized to display various types of content or actions."
-      />
+        heading="Default modal"
+      >
+        <ComponentImage heading="Defailt modal" image={DefaultModalImg}>
+          <ComponentClipBoard />
+        </ComponentImage>
+      </ComponentSub>
+      {/* END OF DEFAULT MODAL */}
+
+      {/* POPUP MODAL */}
       <ComponentSub
-        heading="Popup modal"
-        image={PopupModalImg}
         footnote="A modal that appears suddenly or unexpectedly, typically used to capture user's attention."
-      />
+        heading="Popup modal"
+      >
+        <ComponentImage heading="Popup modal" image={PopupModalImg}>
+          <ComponentClipBoard />
+        </ComponentImage>
+      </ComponentSub>
+      {/* END OF POPUP MODAL */}
+
+      {/* LOGIN MODAL */}
       <ComponentSub
-        heading="Login modal"
-        image={LoginModalImg}
         footnote="A modal specifically designed for users to log in to your web application."
-      />
+        heading="Login modal"
+      >
+        <ComponentImage heading="Login modal" image={LoginModalImg}>
+          <ComponentClipBoard />
+        </ComponentImage>
+      </ComponentSub>
+      {/* END OF LOGIN MODAL */}
+
       <Usage>
         <li>
           Default modal: Displaying additional information, collecting user
