@@ -2,7 +2,8 @@
 import ComponentSub from "../../components/ComponentSub";
 import ComponentSubPage from "../../components/ComponentSubPage";
 import Usage from "../../components/Usage";
-import ButtonSmallImg from "../../assets/images/buttons/small.png";
+import ButtonSmallImg1 from "../../assets/images/buttons/button-1.svg";
+import ButtonSmallImg2 from "../../assets/images/buttons/button-2.svg";
 import ButtonLargeImg from "../../assets/images/buttons/large.png";
 import ButtonIconImg from "../../assets/images/buttons/button-icon.png";
 import ComponentClipBoard from "../../components/ComponentClipBoard";
@@ -29,7 +30,45 @@ export default function Buttons() {
         footnote="A standard button for triggering an action or navigating to another page."
       >
         <ComponentImage
-          image={ButtonSmallImg}
+          image={ButtonSmallImg1}
+          width="9rem"
+          heading="Default button"
+        >
+          <ComponentClipBoard
+            name="Background color"
+            propertyName="background-color"
+            value="#CE5E5E"
+            bgColorVal="#00B998"
+          />
+          <ComponentClipBoard
+            name="Color"
+            bgColorVal="#FFFFFF"
+            propertyName="color"
+            value="#FFFFFF"
+          />
+          <ComponentClipBoard
+            name="Border radius"
+            propertyName="border-radius"
+            value="0.375rem"
+          />
+          <ComponentClipBoard
+            name="Padding"
+            propertyName="padding"
+            value="0.5rem 1.5rem"
+          />
+          <ComponentClipBoard
+            name="Font size"
+            propertyName="font-size"
+            value="0.875rem"
+          />
+          <ComponentClipBoard
+            name="Font weight"
+            propertyName="font-weight"
+            value="500"
+          />
+        </ComponentImage>
+        <ComponentImage
+          image={ButtonSmallImg2}
           width="10rem"
           heading="Default button"
         >

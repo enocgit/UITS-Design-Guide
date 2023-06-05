@@ -8,7 +8,7 @@ export default function Home() {
       <PageHeaderCard
         backgroundColor="rgb(253, 230, 138)"
         marginBottom="5rem"
-        heroTitle="UITS Design Guide for Web"
+        heroTitle="UITS Design Guide for Web Apps"
         heroSubtitle="A comprehensive guide to help you design captivating and effective web applications"
       >
         <Button

@@ -27,6 +27,7 @@ export default function Color() {
       description="Guidelines for choosing and using a cohesive color palette."
       backgroundImage={ColorbgImg}
       backgroundColor="pink"
+      color="#d9475d"
       backgroundPosition="center center"
       // backgroundSize="30rem"
       toPrev="/styles"

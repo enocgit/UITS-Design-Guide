@@ -3,6 +3,7 @@ import ComponentSubPage from "../../components/ComponentSubPage";
 import Usage from "../../components/Usage";
 import BreadCrumbImg from "../../assets/images/navigation/breadcrumb.png";
 import RegularTextLinkImg from "../../assets/images/navigation/regular-text.png";
+import RegularTextBorderLinkImg from "../../assets/images/navigation/regular-text-border.png";
 import ComponentImage from "../../components/ComponentImage";
 import ComponentClipBoard from "../../components/ComponentClipBoard";
 
@@ -55,7 +56,7 @@ export default function Navigation() {
       >
         <ComponentImage
           heading="Regular text with border"
-          image={RegularTextLinkImg}
+          image={RegularTextBorderLinkImg}
         >
           <ComponentClipBoard />
         </ComponentImage>

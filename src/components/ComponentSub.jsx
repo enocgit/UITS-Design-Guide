@@ -1,9 +1,5 @@
 /* eslint-disable react/prop-types */
 
-import { Children, useRef, useState } from "react";
-import ComponentModal from "./ComponentModal";
-import ComponentImage from "./ComponentImage";
-
 export default function ComponentSub({ children, ...props }) {
   // const [show, setShow] = useState(false);
 
@@ -42,11 +38,18 @@ export default function ComponentSub({ children, ...props }) {
       <h2 className="font-medium text-2xl mb-5 text-neutral-800">
         {props.heading}
       </h2>
-      <div
-        className=" p-10 bg-blue-50 border border-neutral-300 rounded-lg flex items-center justify-center flex-wrap gap-3"
-        style={{ justifyContent: props.justifyContent }}
-      >
-        {children}
+      <div className=" p-10 bg-blue-50 border border-neutral-300 rounded-lg flex items-center justify-center">
+        <div
+          className="flex gap-3 flex-wrap justify-center items-center"
+          style={{
+            justifyContent: props.justifyContent,
+            flexDirection: props.flexDirection,
+            alignItems: props.alignItems,
+            gap: props.gap,
+          }}
+        >
+          {children}
+        </div>
         {/* <img
           src={props.image}
           alt=""

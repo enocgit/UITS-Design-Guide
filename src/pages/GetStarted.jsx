@@ -1,4 +1,4 @@
-import buttonImg from "../assets/images/button.png";
+import buttonImg from "../assets/images/button-dimension.svg";
 import GetStartedSection from "../components/GetStartedSection";
 import PageHeaderCard from "../components/PageHeaderCard";
 import OutlineMainOutlineCard from "../components/OutlineMainOutlineCard";
@@ -151,10 +151,9 @@ export default function GetStarted() {
           <span> content for web applications.</span>
         </p>
         <p className="mt-6 mb-12">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur
-          nostrum nemo deserunt ducimus harum. Sint impedit, laudantium porro
-          quod veritatis fugit sed officia architecto. Porro est sequi fuga
-          suscipit quaerat!
+          It is recommended that designers and developers follow the design
+          principles outlined in this guide to produce a consistent design
+          pattern across all web projects.
         </p>
         <OutlineMainOutlineCard
           heading="Styles"
@@ -210,16 +209,15 @@ export default function GetStarted() {
         backgroundImage={DesignImg}
       >
         <p className="mt-7">
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eius, sed
-          deleniti distinctio aspernatur similique provident facere error? Quas
-          itaque ullam blanditiis delectus, quasi alias facere libero quibusdam
-          autem quam sapiente!
+          In this section, we explore two key aspects: &apos;Styles and
+          customization&apos; and &apos;Adaptive layout.&apos; By understanding
+          these concepts, you&apos;ll gain insights into how to create
+          compelling designs that are not only visually appealing but also
+          flexible and responsive to meet the diverse needs of our users.
         </p>
         <p className="mt-6 mb-12">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur
-          nostrum nemo deserunt ducimus harum. Sint impedit, laudantium porro
-          quod veritatis fugit sed officia architecto. Porro est sequi fuga
-          suscipit quaerat!
+          Let&apos;s dive in and discover the principles that will empower you
+          to design exceptional user experiences.
         </p>
         <OutlineMainOutlineCard
           heading="Styles & Customization"

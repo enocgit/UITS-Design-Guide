@@ -1,5 +1,4 @@
 // import { useState } from "react";
-import { useRef } from "react";
 
 /* eslint-disable react/prop-types */
 export default function ComponentClipBoard(props) {
@@ -25,7 +24,7 @@ export default function ComponentClipBoard(props) {
         <div
           className="w-4 h-4"
           style={{
-            backgroundColor: props.value,
+            backgroundColor: props.bgColorVal ? props.bgColorVal : props.value,
             color: props.colorVal,
             borderColor: props.borderColorVal,
             display: !props.value && "none",

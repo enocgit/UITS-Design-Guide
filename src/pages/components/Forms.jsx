@@ -15,6 +15,7 @@ export default function Forms() {
       description="Collect and submit user input."
       backgroundImage={FormsImg}
       backgroundColor="#b9b8b8"
+      color="#fff"
       backgroundSize="30rem"
       subnote=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
         quod eveniet!  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,

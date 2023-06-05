@@ -4,15 +4,15 @@ import Usage from "../../components/Usage";
 import HeroIconsSolidImg from "../../assets/images/icon/heroicons-solid.png";
 import HeroIconsOutlineImg from "../../assets/images/icon/heroicons-outline.png";
 import ComponentImage from "../../components/ComponentImage";
-import ComponentClipBoard from "../../components/ComponentClipBoard";
 
 export default function Iconography() {
   return (
     <ComponentSubPage
       heading="Iconography"
       description="Guidelines on using icon effectively."
+      subnote="Icons are a powerful visual tool that can help users understand content and actions without reading text. Our design system provides a library of icons to use consistently across our products. We employ Hero icons, a comprehensive library of visually impactful icons, to ensure consistency and clarity across our products."
       backgroundImage={HeroIconsOutlineImg}
-      backgroundColor="#262722"
+      backgroundColor="#2e4650"
       color="white"
       backgroundPosition="center center"
       toPrev="/styles/color"
@@ -29,11 +29,14 @@ export default function Iconography() {
           // width="8rem"
           heading="Solid icons"
         >
-          <ComponentClipBoard
-            name="Color"
-            propertyName="color"
-            value="#FFFB06"
-          />
+          <a
+            href="https://heroicons.com"
+            target="_blank"
+            rel="noreferrer"
+            className="underline"
+          >
+            Visit Heroicons
+          </a>
         </ComponentImage>
       </ComponentSub>
       <ComponentSub
@@ -45,11 +48,14 @@ export default function Iconography() {
           // width="8rem"
           heading="Solid icons"
         >
-          <ComponentClipBoard
-            name="Color"
-            propertyName="color"
-            value="#FFFB06"
-          />
+          <a
+            href="https://heroicons.com"
+            target="_blank"
+            rel="noreferrer"
+            className="underline"
+          >
+            Visit Heroicons
+          </a>
         </ComponentImage>
       </ComponentSub>
       <Usage>

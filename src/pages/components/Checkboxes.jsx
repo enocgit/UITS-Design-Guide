@@ -15,6 +15,7 @@ export default function Checkboxes() {
         quod eveniet!  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
         quod eveniet!"
       backgroundColor="#e86e87"
+      color="#fff"
       toPrev="/components/cards"
       toNext="/components/forms"
       prevName="Cards"

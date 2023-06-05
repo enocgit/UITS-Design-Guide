@@ -4,14 +4,14 @@ import { NavLink } from "react-router-dom";
 export default function ComponentSubPage({ children, ...props }) {
   return (
     <>
-      <div className="grid grid-cols-2 gap-2 h-96">
+      <div className="grid grid-cols-auto gap-2 h-96">
         <div
           className="flex items-center justify-center bg-blue-50 rounded-lg p-14 component-sub-head"
           style={{ backgroundColor: props.backgroundColor }}
         >
           <div>
             <h1
-              className="font-bold text-6xl text-neutral-800"
+              className="font-bold text-6xl text-neutral-800 text-center"
               style={{ color: props.color }}
             >
               {props.heading}
@@ -35,7 +35,9 @@ export default function ComponentSubPage({ children, ...props }) {
       </div>
 
       <div className="my-20 mx-auto w-9/12">
-        {/* <p className="mb-20">{props.subnote}</p> */}
+        {props.subnote && (
+          <p className="mb-20 leading-[1.8] font-light">{props.subnote}</p>
+        )}
         {children}
 
         <div className="grid grid-cols-2 gap-2">

@@ -1,7 +1,10 @@
 import ComponentSub from "../../components/ComponentSub";
 import ComponentSubPage from "../../components/ComponentSubPage";
 import Usage from "../../components/Usage";
-import LinkImg from "../../assets/images/Link.png";
+import DefaultLinkImg from "../../assets/images/links/default-link.png";
+import GradientLinkImg from "../../assets/images/links/gradient-link.png";
+import ComponentImage from "../../components/ComponentImage";
+import ComponentClipBoard from "../../components/ComponentClipBoard";
 // import ButtonLargeImg from "../../assets/images/buttons/large.png";
 
 export default function Links() {
@@ -13,7 +16,7 @@ export default function Links() {
         quod eveniet!  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
         quod eveniet!"
       backgroundColor="#79bde3"
-      color="#555"
+      color="#fff"
       toPrev="/components/forms"
       toNext="/components/modals"
       prevName="Forms"
@@ -22,17 +25,35 @@ export default function Links() {
       {/* DEFAULT */}
       <ComponentSub
         heading="Default"
-        image={LinkImg}
+        image={DefaultLinkImg}
         footnote="A clickable text element that navigates the user to another page or resource."
-      ></ComponentSub>
+      >
+        <ComponentImage image={DefaultLinkImg} width="9rem" heading="Default">
+          <ComponentClipBoard
+            name="Color"
+            propertyName="color"
+            bgColorVal="#FFFFFF"
+            value="#FFFFFF"
+          />
+        </ComponentImage>
+      </ComponentSub>
       {/* END OF DEFAULT */}
 
       {/* GRADIENT */}
       <ComponentSub
         heading="Gradient"
-        image={LinkImg}
-        footnote="- A clickable text element with a gradient color scheme that can add visual interest to your design."
-      ></ComponentSub>
+        image={GradientLinkImg}
+        footnote="A clickable text element with a gradient color scheme that can add visual interest to your design."
+      >
+        <ComponentImage image={GradientLinkImg} width="10rem" heading="Default">
+          <ComponentClipBoard
+            name="Color"
+            propertyName="color"
+            bgColorVal="#FFFFFF"
+            value="#FFFFFF"
+          />
+        </ComponentImage>
+      </ComponentSub>
       {/* END OF GRADEINT */}
 
       <Usage>
