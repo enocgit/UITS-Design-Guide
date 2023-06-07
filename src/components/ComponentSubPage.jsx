@@ -1,24 +1,25 @@
 /* eslint-disable react/prop-types */
 import { NavLink } from "react-router-dom";
+import ExclamationCircleIcon from "./ExclamationCircleIcon";
 
 export default function ComponentSubPage({ children, ...props }) {
   return (
     <>
       <div className="grid grid-cols-auto gap-2 h-96">
         <div
-          className="flex items-center justify-center bg-blue-50 rounded-lg p-14 component-sub-head"
-          style={{ backgroundColor: props.backgroundColor }}
+          className="flex items-center justify-center bg-[#177445] rounded-lg p-14 component-sub-head"
+          // style={{ backgroundColor: props.backgroundColor }} bg-blue-50
         >
           <div>
             <h1
-              className="font-bold text-6xl text-neutral-800 text-center"
-              style={{ color: props.color }}
+              className="font-bold text-6xl text-white text-center"
+              // style={{ color: props.color }} text-neutrak-800
             >
               {props.heading}
             </h1>
             <p
-              className="mt-2 text-xl text-neutral-800"
-              style={{ color: props.color }}
+              className="mt-2 text-xl text-white"
+              // style={{ color: props.color }} text-neutral-800
             >
               {props.description}
             </p>
@@ -36,7 +37,10 @@ export default function ComponentSubPage({ children, ...props }) {
 
       <div className="my-20 mx-auto w-9/12">
         {props.subnote && (
-          <p className="mb-20 leading-[1.8] font-light">{props.subnote}</p>
+          <div className="flex items-start gap-3">
+            <ExclamationCircleIcon />
+            <p className="mb-20 leading-[1.8] font-light">{props.subnote}</p>
+          </div>
         )}
         {children}
 

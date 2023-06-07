@@ -19,6 +19,7 @@ import Animation from "../pages/styles/Animation";
 import Color from "../pages/styles/Color";
 import Iconography from "../pages/styles/Iconography";
 import Typography from "../pages/styles/Typography";
+import AdaptiveLayout from "../pages/AdaptiveLayout";
 
 export default function PageRoutes() {
   const elements = useRoutes([
@@ -119,6 +120,16 @@ export default function PageRoutes() {
         {
           path: "togglers",
           element: <Togglers />,
+        },
+      ],
+    },
+    {
+      path: "/adaptive-layout",
+      element: <Layout />,
+      children: [
+        {
+          index: true,
+          element: <AdaptiveLayout />,
         },
       ],
     },

@@ -30,9 +30,9 @@ export default function Color() {
       color="#d9475d"
       backgroundPosition="center center"
       // backgroundSize="30rem"
-      toPrev="/styles"
+      toPrev="/styles/animation"
       toNext="/styles/iconography"
-      prevName="Styles"
+      prevName="Animation and Interaction"
       nextName="Iconography"
     >
       {/* BRAND COLORS */}

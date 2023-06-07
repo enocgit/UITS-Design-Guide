@@ -23,7 +23,7 @@ export default function GetStarted() {
           <a href="#about-udgweb">
             <div className="bg-blue-50 p-5 rounded-2xl relative hover:bottom-1 transition-all">
               <h2 className="text-2xl font-medium">
-                What is UITS Design Guide for Web?
+                What is UITS Design Guide for Web Apps?
               </h2>
               <p>
                 Learn about the comprehensive system for creating consistent
@@ -34,11 +34,8 @@ export default function GetStarted() {
           {/* Outline-topic */}
           <a href="#using-udgweb">
             <div className="bg-blue-50 p-5 rounded-2xl relative hover:bottom-1 transition-all">
-              <h2 className="text-2xl font-medium">Using UDGWeb</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Repellendus, ipsum?
-              </p>
+              <h2 className="text-2xl font-medium">Using UDGWebA</h2>
+              <p>Explore the styles and components sections.</p>
             </div>
           </a>
           {/* Outline-topic */}
@@ -243,6 +240,7 @@ export default function GetStarted() {
         <OutlineMainOutlineCard
           heading="Adaptive Layout"
           bodyText="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+          to="/adaptive-layout"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"

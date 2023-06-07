@@ -13,6 +13,7 @@ export default function PageHeaderCard({ children, ...props }) {
           marginBottom: props.marginBottom,
           // backgroundImage: props.backgroundImage,
           backgroundSize: props.backgroundSize,
+          color: props.color,
         }}
       >
         {/* Container */}
@@ -25,7 +26,7 @@ export default function PageHeaderCard({ children, ...props }) {
           </h1>
           <h5
             className="text-center text-base sm2:text-xl mx-auto text-red-900"
-            style={{ color: props.subtitleColor }}
+            style={{ color: props.subtitleColor || props.color }}
           >
             {props.heroSubtitle}
           </h5>

@@ -3,6 +3,7 @@ import PageHeaderCard from "../components/PageHeaderCard";
 import AlertColorsImg from "../assets/images/color/alert.png";
 import HeroiconsSideImg from "../assets/images/icon/heroicons-solid.png";
 import FathomImg from "../assets/images/typography/cover.png";
+import Spinner from "../assets/images/animation/spinner.svg";
 
 export default function Styles() {
   return (
@@ -16,11 +17,12 @@ export default function Styles() {
       <section className="mb-32">
         <div className="grid grid-cols-2 gap-3">
           <ImageCard
-            heading="Animation"
-            bodyText=" Tips for adding engaging and effective animation to your application."
+            heading="Animation and Interaction"
+            bodyText=" Tips for adding engaging and effective animation and interaction to your application."
             to="/styles/animation"
             bgHeight="20rem"
-            backgroundImage=""
+            backgroundImage={Spinner}
+            backgroundSize="5rem"
           />
           <ImageCard
             heading="Color"
