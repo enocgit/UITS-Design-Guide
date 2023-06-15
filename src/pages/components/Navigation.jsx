@@ -13,9 +13,7 @@ export default function Navigation() {
       heading="Navigation"
       description="Provide links to different sections of an application.
 "
-      subnote=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
-        quod eveniet!  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
-        quod eveniet!"
+      subnote="The Navigation Components section of our design guide coveris essential elements such as breadcrumb navigation and regular text navigation styles."
       backgroundColor="#43c3af"
       color="#fff"
       toPrev="/components/modals"

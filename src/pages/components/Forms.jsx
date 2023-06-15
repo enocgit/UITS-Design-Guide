@@ -17,9 +17,7 @@ export default function Forms() {
       backgroundColor="#b9b8b8"
       color="#fff"
       backgroundSize="30rem"
-      subnote=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
-        quod eveniet!  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
-        quod eveniet!"
+      subnote="Discover best practices for default input styling, incorporating disabled input functionality, and leveraging icons to enhance the usability and visual appeal of your form inputs."
       toPrev="/components/checkboxes"
       toNext="/components/links"
       prevName="Checkboxes"

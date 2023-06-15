@@ -28,7 +28,7 @@ export default function Typography() {
       <ComponentSub
         heading="Font Weight"
         footnote="The primary colors that represent our brand and should be used consistently across  and web pages."
-        flexDirection="column"
+        // flexDirection="column"
         gap="2rem"
       >
         <ComponentImage image={RegularType} width="10rem" heading="Regular">
@@ -59,7 +59,7 @@ export default function Typography() {
       <ComponentSub
         heading="Font Size"
         footnote="The primary colors that represent our brand and should be used consistently across  and web pages."
-        flexDirection="column"
+        // flexDirection="column"
         gap="2rem"
       >
         <ComponentImage image={Heading1} width="16rem" heading="Heading 1">

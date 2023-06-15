@@ -12,9 +12,7 @@ export default function Modals() {
     <ComponentSubPage
       heading="Modals"
       description="Display content or require user action before continuing."
-      subnote=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
-        quod eveniet!  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
-        quod eveniet!"
+      subnote="Discover guidance on customizing and implementing various modals, including popup modals and login modals, to enhance user interactions."
       backgroundColor="#f2f2f2"
       // color="#fff"
       toPrev="/components/links"
@@ -27,7 +25,11 @@ export default function Modals() {
         footnote="A modal that can be customized to display various types of content or actions."
         heading="Default modal"
       >
-        <ComponentImage heading="Defailt modal" image={DefaultModalImg}>
+        <ComponentImage
+          heading="Default modal"
+          image={DefaultModalImg}
+          clipDisplay="none"
+        >
           <ComponentClipBoard />
         </ComponentImage>
       </ComponentSub>
@@ -38,7 +40,11 @@ export default function Modals() {
         footnote="A modal that appears suddenly or unexpectedly, typically used to capture user's attention."
         heading="Popup modal"
       >
-        <ComponentImage heading="Popup modal" image={PopupModalImg}>
+        <ComponentImage
+          heading="Popup modal"
+          image={PopupModalImg}
+          clipDisplay="none"
+        >
           <ComponentClipBoard />
         </ComponentImage>
       </ComponentSub>
@@ -49,7 +55,11 @@ export default function Modals() {
         footnote="A modal specifically designed for users to log in to your web application."
         heading="Login modal"
       >
-        <ComponentImage heading="Login modal" image={LoginModalImg}>
+        <ComponentImage
+          heading="Login modal"
+          image={LoginModalImg}
+          clipDisplay="none"
+        >
           <ComponentClipBoard />
         </ComponentImage>
       </ComponentSub>

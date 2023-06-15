@@ -41,6 +41,7 @@ export default function ComponentModal({ children, ...props }) {
               top="1rem"
               right="2rem"
               handleCopyClick={handleCopyClick}
+              display={props.clipDisplay}
             />
             <div className="text-base leading-relaxed text-gray-500 dark:text-gray-400 flex items-center justify-center">
               <div>

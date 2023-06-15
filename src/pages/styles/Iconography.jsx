@@ -28,6 +28,7 @@ export default function Iconography() {
           image={HeroIconsSolidImg}
           // width="8rem"
           heading="Solid icons"
+          clipDisplay="none"
         >
           <a
             href="https://heroicons.com"
@@ -47,6 +48,7 @@ export default function Iconography() {
           image={HeroIconsOutlineImg}
           // width="8rem"
           heading="Solid icons"
+          clipDisplay="none"
         >
           <a
             href="https://heroicons.com"

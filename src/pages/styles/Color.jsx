@@ -25,6 +25,7 @@ export default function Color() {
     <ComponentSubPage
       heading="Color"
       description="Guidelines for choosing and using a cohesive color palette."
+      subnote="This section provide guidance on brand colors, shades, and grayscale."
       backgroundImage={ColorbgImg}
       backgroundColor="pink"
       color="#d9475d"

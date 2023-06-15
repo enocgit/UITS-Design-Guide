@@ -24,7 +24,6 @@ export default function ImageCard(props) {
             backgroundPosition: props.backgroundPosition,
             backgroundSize: props.backgroundSize,
             height: props.bgHeight,
-            width: props.width,
           }}
         ></div>
         <div className="p-5 rounded-3xl">

@@ -15,9 +15,7 @@ export default function Cards() {
       backgroundImage={DashboardImg}
       backgroundColor="#fff3eb"
       backgroundPosition="bottom right 10rem"
-      subnote=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
-        quod eveniet!  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
-        quod eveniet!"
+      subnote="The Card Components section of our design guide offers concise guidance on corner radius, spacing, shadows, and more, empowering you to well-structured cards that elevate your user interface design."
       toPrev="/components/buttons"
       toNext="/components/checkboxes"
       prevName="Buttons"

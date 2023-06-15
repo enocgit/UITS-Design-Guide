@@ -33,9 +33,7 @@ export default function Alerts() {
       // backgroundImage={FormsImg}
       // backgroundSize="30rem"
       backgroundColor="#d1fae5"
-      subnote=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
-        quod eveniet!  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
-        quod eveniet!"
+      subnote="Enhance user experience and convey important messages effectively with our versatile Alert components. From informative updates to success notifications, warnings, and critical alerts, our design guide provides guidance on creating impactful alerts for applications."
       toPrev="/components"
       toNext="/components/badges"
       prevName="Components"

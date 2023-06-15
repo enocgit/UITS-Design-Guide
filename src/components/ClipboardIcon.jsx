@@ -8,7 +8,12 @@ export default function ClipboardIcon(props) {
       strokeWidth={1.5}
       stroke="#aaa"
       className="w-4 h-4 relative bottom-1 hover:cursor-pointer"
-      style={{ position: "absolute", right: props.right, top: props.top }}
+      style={{
+        position: "absolute",
+        right: props.right,
+        top: props.top,
+        display: props.display,
+      }}
       onClick={props.handleCopyClick}
     >
       <path

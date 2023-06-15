@@ -12,9 +12,7 @@ export default function Links() {
     <ComponentSubPage
       heading="Links"
       description="Navigate to another page or resource."
-      subnote=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
-        quod eveniet!  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
-        quod eveniet!"
+      subnote="The Link Components section of our design guide offers valuable guidance on link colors and styling, and recommended practices for links in your web apps."
       backgroundColor="#79bde3"
       color="#fff"
       toPrev="/components/forms"
@@ -32,8 +30,13 @@ export default function Links() {
           <ComponentClipBoard
             name="Color"
             propertyName="color"
-            bgColorVal="#FFFFFF"
-            value="#FFFFFF"
+            bgColorVal="#0284C7"
+            value="#0284C7"
+          />
+          <ComponentClipBoard
+            name="Text Decoration"
+            propertyName="text-decoration"
+            value="underline"
           />
         </ComponentImage>
       </ComponentSub>
@@ -49,8 +52,13 @@ export default function Links() {
           <ComponentClipBoard
             name="Color"
             propertyName="color"
-            bgColorVal="#FFFFFF"
-            value="#FFFFFF"
+            bgColorVal="#1A15D3"
+            value="#1A15D3"
+          />
+          <ComponentClipBoard
+            name="Text Decoration"
+            propertyName="text-decoration"
+            value="underline"
           />
         </ComponentImage>
       </ComponentSub>

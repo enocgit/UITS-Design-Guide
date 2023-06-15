@@ -13,9 +13,7 @@ export default function Togglers() {
     <ComponentSubPage
       heading="Togglers"
       description=" Enable or disable a setting or option."
-      subnote=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
-        quod eveniet!  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
-        quod eveniet!"
+      subnote="The Toggler Components section of our design guide offers guidance on customizing and utilizing various toggler elements, including default and disabled options."
       backgroundColor="#dbd6e1"
       toPrev="/components/tags"
       prevName="tags"

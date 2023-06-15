@@ -48,6 +48,7 @@ export default function ComponentImage({ children, ...props }) {
         onClose={onClose} // handled by modal component
         heading={props.heading}
         handleCopyClick={handleCopyClick}
+        clipDisplay={props.clipDisplay}
       >
         {children}
       </ComponentModal>

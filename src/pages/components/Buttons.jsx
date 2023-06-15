@@ -14,9 +14,7 @@ export default function Buttons() {
     <ComponentSubPage
       heading="Buttons"
       description="Trigger an action or navigate to another page."
-      subnote=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
-        quod eveniet!  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
-        quod eveniet!"
+      subnote="The Button Components section of our design guide offers comprehensive guidance on creating user-friendly buttons. Explore recommendations on color schemes, button sizes, icon implementation, and button shapes for your interface design."
       backgroundColor="#82bfbd"
       color="#fbfbfb"
       toPrev="/components/badges"

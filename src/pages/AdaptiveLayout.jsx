@@ -5,7 +5,7 @@ export default function AdaptiveLayout() {
   return (
     <>
       <PageHeaderCard
-        backgroundColor="#6bb7e6"
+        backgroundColor="#177445"
         color="white"
         marginBottom="5rem"
         heroTitle="Adaptive Layout"

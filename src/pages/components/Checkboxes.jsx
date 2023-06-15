@@ -11,9 +11,7 @@ export default function Checkboxes() {
     <ComponentSubPage
       heading="Checkboxes"
       description="Allow users to select one or multiple options."
-      subnote=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
-        quod eveniet!  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
-        quod eveniet!"
+      subnote="This section of the design guide provides guidance on color customization for checked/selected, unchecked/unselected, and disabled states of Checkbox and Radio elements, empowering designers and developers to create visually cohesive user interfaces."
       backgroundColor="#e86e87"
       color="#fff"
       toPrev="/components/cards"

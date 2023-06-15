@@ -1,6 +1,5 @@
 import ComponentSubPage from "../../components/ComponentSubPage";
-import BadgeTextImg from "../../assets/images/badges/badge-text.png";
-import StatusColorsImg from "../../assets/images/badges/status-colors.png";
+
 import ComponentSub from "../../components/ComponentSub";
 import Usage from "../../components/Usage";
 import BreadCrumbImg from "../../assets/images/navigation/breadcrumb.png";
@@ -27,9 +26,7 @@ export default function Bagdes() {
       color="#fff"
       backgroundPosition="right 20rem center"
       // backgroundSize="30rem"
-      subnote=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
-        quod eveniet!  Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae,
-        quod eveniet!"
+      subnote="The Badges component section of the design guide provides guidance on effectively positioning alerts on images and text, as well as selecting the appropriate colors to create informative badges for enhanced user experience."
       toPrev="/components/alerts"
       toNext="/components/buttons"
       prevName="Alerts"
