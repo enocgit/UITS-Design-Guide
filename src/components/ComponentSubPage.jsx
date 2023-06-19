@@ -46,7 +46,7 @@ export default function ComponentSubPage({ children, ...props }) {
 
         <div className="grid grid-cols-2 gap-2">
           <NavLink to={props.toPrev}>
-            <div className="bg-blue-50 rounded-lg p-8 hover:bg-blue-100">
+            <div className="bg-green-100 rounded-lg p-8 hover:bg-blue-100">
               <p className="text-neutral-600">Previous</p>
               <h3 className="font-medium text-2xl mt-2 text-neutral-800">
                 {props.prevName}
@@ -55,7 +55,7 @@ export default function ComponentSubPage({ children, ...props }) {
           </NavLink>
           <NavLink to={props.toNext}>
             <div
-              className="bg-blue-50 rounded-lg p-8 hover:bg-blue-100"
+              className="bg-green-100 rounded-lg p-8 hover:bg-blue-100"
               style={{ display: !props.toNext && "none" }}
             >
               <p className="text-neutral-600">Next</p>

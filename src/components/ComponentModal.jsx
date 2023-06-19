@@ -33,7 +33,9 @@ export default function ComponentModal({ children, ...props }) {
     <React.Fragment>
       {/* <Button onClick={props.onClick}>Toggle modal</Button> */}
       <Modal show={props.show} onClose={props.onClose} size="3xl">
-        <Modal.Header className="bg-blue-50">{props.heading}</Modal.Header>
+        <Modal.Header className="bg-blue-50">
+          <span className="text-neutral-800">{props.heading}</span>
+        </Modal.Header>
         <Modal.Body className="bg-blue-50 relative">
           <div className="space-y-6">
             <CopiedToast ref={childRef} />

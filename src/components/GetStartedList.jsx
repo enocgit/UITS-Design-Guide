@@ -2,11 +2,9 @@
 export default function GetStartedList(props) {
   return (
     <li className="mt-6">
-      <span className="font-medium text-light text-blue-950">
-        {props.title}:
-      </span>
+      <span className="font-medium text-light text-white">{props.title}:</span>
       <br />
-      <p className="font-light text-blue-950">{props.body}</p>
+      <p className="font-light text-white/70">{props.body}</p>
     </li>
   );
 }

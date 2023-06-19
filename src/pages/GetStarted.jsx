@@ -77,7 +77,7 @@ export default function GetStarted() {
         </p>
         <Accordion
           title="Target audience"
-          body="  This design guide is intended for designers, developers, and contract
+          body="This design guide is intended for designers, developers, and contract
           workers within the organization. By following the guidelines outlined
           in this document, everyone can ensure that their work is consistent
           and aligns with the organization's brand."
@@ -239,7 +239,7 @@ export default function GetStarted() {
         </OutlineMainOutlineCard>
         <OutlineMainOutlineCard
           heading="Adaptive Layout"
-          bodyText="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+          bodyText="Optimizing Layout and Responsiveness"
           to="/adaptive-layout"
         >
           <svg

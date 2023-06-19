@@ -20,6 +20,8 @@ import Color from "../pages/styles/Color";
 import Iconography from "../pages/styles/Iconography";
 import Typography from "../pages/styles/Typography";
 import AdaptiveLayout from "../pages/AdaptiveLayout";
+import LayoutPage from "../pages/adaptive-layout/LayoutPage";
+import ResponsiveDesign from "../pages/adaptive-layout/ResponsiveDesign";
 
 export default function PageRoutes() {
   const elements = useRoutes([
@@ -130,6 +132,14 @@ export default function PageRoutes() {
         {
           index: true,
           element: <AdaptiveLayout />,
+        },
+        {
+          path: "layout",
+          element: <LayoutPage />,
+        },
+        {
+          path: "responsive-design",
+          element: <ResponsiveDesign />,
         },
       ],
     },

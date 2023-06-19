@@ -8,8 +8,8 @@ export default function MyAccordion({ children, ...props }) {
         <Accordion.Panel>
           <Accordion.Title>{props.title}</Accordion.Title>
           <Accordion.Content>
-            <p className="font-light">{props.body}</p>
-            <ul>{children}</ul>
+            <p className="font-light text-white">{props.body}</p>
+            <ul className="">{children}</ul>
           </Accordion.Content>
         </Accordion.Panel>
       </Accordion>
