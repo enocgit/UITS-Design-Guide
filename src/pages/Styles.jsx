@@ -7,7 +7,7 @@ import Spinner from "../assets/images/animation/spinner.svg";
 
 export default function Styles() {
   return (
-    <>
+    <div>
       <PageHeaderCard
         backgroundColor="rgb(253, 230, 138)"
         marginBottom="5rem"
@@ -15,7 +15,7 @@ export default function Styles() {
         heroSubtitle="Customizable design elements to enhance the look and feel of web applications."
       ></PageHeaderCard>
       <section className="mb-32">
-        <div className="grid grid-cols-2 gap-3">
+        <div className="grid gap-16 min-[540px]:grid-cols-2 min-[540px]:gap-3">
           <ImageCard
             heading="Animation and Interaction"
             bodyText=" Tips for adding engaging and effective animation and interaction to your application."
@@ -47,6 +47,6 @@ export default function Styles() {
           />
         </div>
       </section>
-    </>
+    </div>
   );
 }

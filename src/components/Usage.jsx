@@ -2,14 +2,16 @@
 
 export default function Usage({ children }) {
   return (
-    <>
-      <h1 className="text-5xl font-medium mb-8 text-neutral-800">Usage</h1>
+    <div className="mx-auto w-10/12 md:w-9/12">
+      <h1 className="mb-8 font-medium text-neutral-800 min-[230px]:text-3xl min-[550px]:text-4xl lg:text-5xl">
+        Usage
+      </h1>
       <ul
-        className="list-disc space-y-4 mb-20"
+        className="mb-20 list-disc space-y-4 text-sm md:text-base"
         style={{ listStyleImage: "url('/ArrowCircleRight.svg')" }}
       >
         {children}
       </ul>
-    </>
+    </div>
   );
 }

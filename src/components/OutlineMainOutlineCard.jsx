@@ -25,17 +25,17 @@ export default function OutlineMainOutlineCard({ children, ...props }) {
   return (
     <NavLink to={props.to}>
       <div
-        className="outline-parent bg-blue-50  hover:bg-blue-100 px-5 py-8 rounded-2xl mb-2 ml-2 flex gap-6"
+        className="outline-parent mb-2  ml-2 flex gap-6 rounded-2xl bg-blue-50 px-5 py-8 hover:bg-blue-100"
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
       >
         <div>
-          <h2 className="text-2xl font-medium">{props.heading}</h2>
+          <h2 className="text-xl sm:text-2xl font-medium">{props.heading}</h2>
           <p className="pt-2" style={{ fontWeight: "400", width: props.width }}>
             {props.bodyText}
           </p>
         </div>
-        <div className="ml-auto outline-svg transition-all" ref={childRef}>
+        <div className="outline-svg ml-auto transition-all" ref={childRef}>
           {children}
         </div>
       </div>

@@ -6,6 +6,8 @@ import DashboardImg from "../assets/images/dashboard-view.png";
 import DesignImg from "../assets/images/design.png";
 import Accordion from "../components/AccordionChild";
 import GetStartedList from "../components/GetStartedList";
+import OutlineTopic from "../components/OutlineTopic";
+import PHCardOutlineSmall from "../components/PHCardOutlineSmall";
 
 export default function GetStarted() {
   return (
@@ -18,59 +20,42 @@ export default function GetStarted() {
         heroSubtitle="A guide to help you get started with designing web applications."
       >
         {/* Outline */}
-        <div className="xl:grid grid-cols-2 mt-10 gap-2 hidden">
-          {/* Outline-topic */}
-          <a href="#about-udgweb">
-            <div className="bg-blue-50 p-5 rounded-2xl relative hover:bottom-1 transition-all">
-              <h2 className="text-2xl font-medium">
-                What is UITS Design Guide for Web Apps?
-              </h2>
-              <p>
-                Learn about the comprehensive system for creating consistent
-                designs across web applications.
-              </p>
-            </div>
-          </a>
-          {/* Outline-topic */}
-          <a href="#using-udgweb">
-            <div className="bg-blue-50 p-5 rounded-2xl relative hover:bottom-1 transition-all">
-              <h2 className="text-2xl font-medium">Using UDGWebA</h2>
-              <p>Explore the styles and components sections.</p>
-            </div>
-          </a>
-          {/* Outline-topic */}
-          <a href="#design">
-            <div className="bg-blue-50 p-5 rounded-2xl relative hover:bottom-1 transition-all">
-              <h2 className="text-2xl font-medium">Design</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Repellendus, ipsum?
-              </p>
-            </div>
-          </a>
-          {/* Outline-topic */}
-          <a href="/src/develop.html">
-            <div className="bg-blue-50 p-5 rounded-2xl relative hover:bottom-1 transition-all">
-              <h2 className="text-2xl font-medium">Develop</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Repellendus, ipsum?
-              </p>
-            </div>
-          </a>
+        <div className="mt-10 hidden grid-cols-2 gap-2 xl:grid">
+          <OutlineTopic
+            href="#about-udgweb"
+            title="What is UITS Design Guide for Web Apps?"
+            body="Learn about the comprehensive system for creating consistent designs
+            across web applications."
+          />
+          <OutlineTopic
+            href="#using-udgweb"
+            title="Using UDGWebA"
+            body="Explore the styles and components sections."
+          />
+          <OutlineTopic
+            href="#design"
+            title="Design"
+            body="Explore two key aspects: 'Styles and customization' and 'Adaptive layout.' "
+          />
+          {/* <OutlineTopic 
+            href=""
+            title="Design"
+            body=""
+          /> */}
         </div>
       </PageHeaderCard>
+      <PHCardOutlineSmall />
       <GetStartedSection
         id="about-udgweb"
         outlineHeading="What is UITS Design Guide for Web?"
         backgroundImage={DashboardImg}
       >
-        <p className="mt-7">
+        <p className="mt-7 text-sm sm:text-base">
           The University Information Technology Services (UITS) Design Guide for
           Web is a comprehensive system for creating consistent designs across
           web applications.
         </p>
-        <p className="mt-6">
+        <p className="mt-6 text-sm sm:text-base">
           The purpose of this document is to provide guidelines for designers
           and developers to follow, ensuring that all projects within the
           organization adhere to a consistent visual identity.
@@ -124,7 +109,7 @@ export default function GetStarted() {
         outlineHeading="Using UITS Design Guide for Web"
         backgroundImage={buttonImg}
       >
-        <p className="mt-7">
+        <p className="mt-7 text-sm sm:text-base">
           The UITS Design Guide for Web covers the following elements:
           <span className="underline"> typography</span>,{" "}
           <span className="underline">iconography</span>
@@ -147,7 +132,7 @@ export default function GetStarted() {
           <span className="underline">multimedia</span>
           <span> content for web applications.</span>
         </p>
-        <p className="mt-6 mb-12">
+        <p className="mb-12 mt-6 text-sm sm:text-base">
           It is recommended that designers and developers follow the design
           principles outlined in this guide to produce a consistent design
           pattern across all web projects.
@@ -164,7 +149,7 @@ export default function GetStarted() {
             viewBox="0 0 24 24"
             strokeWidth="1.5"
             stroke="currentColor"
-            className="w-6 h-6"
+            className="h-6 w-6"
           >
             <path
               strokeLinecap="round"
@@ -185,7 +170,7 @@ export default function GetStarted() {
             viewBox="0 0 24 24"
             strokeWidth="1.5"
             stroke="currentColor"
-            className="w-6 h-6"
+            className="h-6 w-6"
           >
             <path
               strokeLinecap="round"
@@ -205,14 +190,14 @@ export default function GetStarted() {
         outlineHeading="Design"
         backgroundImage={DesignImg}
       >
-        <p className="mt-7">
+        <p className="mt-7 text-sm sm:text-base">
           In this section, we explore two key aspects: &apos;Styles and
           customization&apos; and &apos;Adaptive layout.&apos; By understanding
           these concepts, you&apos;ll gain insights into how to create
           compelling designs that are not only visually appealing but also
           flexible and responsive to meet the diverse needs of our users.
         </p>
-        <p className="mt-6 mb-12">
+        <p className="mb-12 mt-6 text-sm sm:text-base">
           Let&apos;s dive in and discover the principles that will empower you
           to design exceptional user experiences.
         </p>
@@ -228,7 +213,7 @@ export default function GetStarted() {
             viewBox="0 0 24 24"
             strokeWidth="1.5"
             stroke="currentColor"
-            className="w-6 h-6"
+            className="h-6 w-6"
           >
             <path
               strokeLinecap="round"
@@ -248,7 +233,7 @@ export default function GetStarted() {
             viewBox="0 0 24 24"
             strokeWidth="1.5"
             stroke="currentColor"
-            className="w-6 h-6"
+            className="h-6 w-6"
           >
             <path
               strokeLinecap="round"

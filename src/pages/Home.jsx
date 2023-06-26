@@ -1,6 +1,7 @@
 import Button from "../components/Button";
 import ImageCard from "../components/ImageCard";
 import PageHeaderCard from "../components/PageHeaderCard";
+import HeroiconsSideImg from "../assets/images/icon/heroicons-solid.png";
 
 export default function Home() {
   return (
@@ -17,11 +18,13 @@ export default function Home() {
           color="#fff"
         />
       </PageHeaderCard>
-      <section className="m-2 min-h-screen">
+      <section className="m-2 mb-60">
         <div className="">
-          <div className="pl-10">
-            <h1 className="text-5xl font-medium">Design Guide Updates</h1>
-            <div className="grid grid-cols-3 mt-8">
+          <div className="pt-20 lg:pl-10 xl:pt-0">
+            <h1 className="font-medium min-[230px]:text-2xl min-[550px]:text-3xl lg:text-5xl">
+              Design Guide Updates
+            </h1>
+            <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-3">
               <ImageCard
                 heading="Animation"
                 bodyText="Lorem ipsum dolor sit amet consectetur adipisicing elit. Et, neque?"
@@ -31,14 +34,20 @@ export default function Home() {
         </div>
       </section>
       {/* <!-- Resources --> */}
-      <section className="m-2 min-h-screen">
+      <section className="m-2 mb-60">
         <div className="">
-          <div className="pl-10">
-            <h1 className="text-5xl font-medium">Resources</h1>
-            <div className="grid grid-cols-3 mt-8">
+          <div className="lg:pl-10">
+            <h1 className="font-medium min-[230px]:text-2xl min-[550px]:text-3xl lg:text-5xl">
+              Resources
+            </h1>
+            <div className="mt-8 grid sm:grid-cols-2 lg:grid-cols-3">
               <ImageCard
-                heading="Lorem ipsum, dolem"
-                bodyText="Lorem ipsum dolor sit amet consectetur adipisicing elit."
+                heading="Heroicons"
+                bodyText="A comprehensive library for our design guide."
+                backgroundImage={HeroiconsSideImg}
+                to="https://heroicons.com"
+                target="_blank"
+                tooltip="Visit heroicons"
               />
             </div>
           </div>

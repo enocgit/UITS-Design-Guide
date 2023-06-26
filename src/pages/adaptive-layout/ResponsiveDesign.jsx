@@ -7,6 +7,7 @@ import ComponentImage from "../../components/ComponentImage";
 import ScreenSizesImg from "../../assets/images/adaptive-layout/responsiveness/screen-sizes.svg";
 import NavigationImg from "../../assets/images/adaptive-layout/responsiveness/navigation.svg";
 import PerformanceImg from "../../assets/images/adaptive-layout/responsiveness/performance.svg";
+import ContentHierarchyImg from "../../assets/images/adaptive-layout/responsiveness/content-hierarchy.svg";
 
 export default function ResponsiveDesign() {
   return (
@@ -52,7 +53,7 @@ export default function ResponsiveDesign() {
         footnote="Content should be structured in a way that prioritizes important information on smaller screens, without overwhelming the user with too much information. "
       >
         <ComponentImage
-          image=""
+          image={ContentHierarchyImg}
           width="15rem"
           heading="Content hierarchy"
         ></ComponentImage>

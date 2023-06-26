@@ -10,14 +10,19 @@ export default function ImageCard(props) {
   };
 
   return (
-    <NavLink to={props.to} className="text-light">
+    <NavLink
+      to={props.to}
+      target={props.target}
+      className="text-light tooltip-info tooltip tooltip-bottom w-full sm:tooltip-right"
+      data-tip={props.tooltip}
+    >
       <div
         className="w-full rounded-3xl bg-[#fcfcfc] transition-all"
         onMouseOver={handleMouseOver}
         onMouseOut={handleMouseOut}
       >
         <div
-          className="bg-blue-50 bg-center bg-contain bg-no-repeat w-full h-48 rounded-3xl"
+          className="h-48 w-full rounded-3xl bg-blue-50 bg-contain bg-center bg-no-repeat"
           style={{
             backgroundColor: props.backgroundColor,
             backgroundImage: `url(${props.backgroundImage})`,
@@ -26,11 +31,14 @@ export default function ImageCard(props) {
             height: props.bgHeight,
           }}
         ></div>
-        <div className="p-5 rounded-3xl">
-          <h3 className="font-medium text-2xl text-neutral-800">
+        <div className="rounded-3xl p-5">
+          <h3 className="text-left text-lg font-medium text-neutral-800 lg:text-2xl">
             {props.heading}
           </h3>
-          <p className="mt-1" style={{ fontWeight: "400" }}>
+          <p
+            className="mt-1 text-left text-sm md:text-base"
+            style={{ fontWeight: "400" }}
+          >
             {props.bodyText}
           </p>
         </div>

@@ -23,9 +23,9 @@ export default function Components() {
         heroTitle="Components"
         heroSubtitle="Components are the building blocks for creating user interfaces for web applications."
       ></PageHeaderCard>
-      <section className="mb-32 grid grid-cols-3 gap-x-3 gap-y-32">
-        <div>
-          <h1 className="text-5xl font-medium mb-8 text-neutral-900">Alerts</h1>
+      <section className="mb-32 grid w-full min-[580px]:grid-cols-2 min-[902px]:grid-cols-3 gap-x-3 gap-y-16 min-[580px]:gap-y-32">
+        <div className="">
+          <h1 className="mb-8 text-3xl lg:text-5xl font-medium text-neutral-900">Alerts</h1>
           <ImageCard
             heading="Alerts"
             bodyText="Notify users about important information or events."
@@ -35,7 +35,7 @@ export default function Components() {
           />
         </div>
         <div>
-          <h1 className="text-5xl font-medium mb-8 text-neutral-900">Badges</h1>
+          <h1 className="mb-8 text-3xl lg:text-5xl font-medium text-neutral-900">Badges</h1>
           <ImageCard
             heading="Badges"
             bodyText="Display additional information or status on an element."
@@ -45,7 +45,7 @@ export default function Components() {
           />
         </div>
         <div>
-          <h1 className="text-5xl font-medium mb-8 text-neutral-900">
+          <h1 className="mb-8 text-3xl lg:text-5xl font-medium text-neutral-900">
             Buttons
           </h1>
           <ImageCard
@@ -57,7 +57,7 @@ export default function Components() {
           />
         </div>
         <div>
-          <h1 className="text-5xl font-medium mb-8 text-neutral-900">Cards</h1>
+          <h1 className="mb-8 text-3xl lg:text-5xl font-medium text-neutral-900">Cards</h1>
           <ImageCard
             heading="Cards"
             bodyText="Group related information and actions together."
@@ -67,7 +67,7 @@ export default function Components() {
           />
         </div>
         <div>
-          <h1 className="text-5xl font-medium mb-8 text-neutral-900">
+          <h1 className="mb-8 text-3xl lg:text-5xl font-medium text-neutral-900">
             Checkboxes
           </h1>
           <ImageCard
@@ -79,7 +79,7 @@ export default function Components() {
           />
         </div>
         <div>
-          <h1 className="text-5xl font-medium mb-8 text-neutral-900">Forms</h1>
+          <h1 className="mb-8 text-3xl lg:text-5xl font-medium text-neutral-900">Forms</h1>
           <ImageCard
             heading="Input components"
             bodyText="Collect and submit user input."
@@ -89,7 +89,7 @@ export default function Components() {
           />
         </div>
         <div>
-          <h1 className="text-5xl font-medium mb-8 text-neutral-900">Links</h1>
+          <h1 className="mb-8 text-3xl lg:text-5xl font-medium text-neutral-900">Links</h1>
           <ImageCard
             heading="Links"
             bodyText="Navigate to another page or resource."
@@ -99,7 +99,7 @@ export default function Components() {
           />
         </div>
         <div>
-          <h1 className="text-5xl font-medium mb-8 text-neutral-900">Modals</h1>
+          <h1 className="mb-8 text-3xl lg:text-5xl font-medium text-neutral-900">Modals</h1>
           <ImageCard
             heading="Modals"
             bodyText="Display content or require user action before continuing."
@@ -108,7 +108,7 @@ export default function Components() {
           />
         </div>
         <div>
-          <h1 className="text-5xl font-medium mb-8 text-neutral-900">
+          <h1 className="mb-8 text-3xl lg:text-5xl font-medium text-neutral-900">
             Navigation
           </h1>
           <ImageCard
@@ -121,7 +121,7 @@ export default function Components() {
           />
         </div>
         <div>
-          <h1 className="text-5xl font-medium mb-8 text-neutral-900">Tags</h1>
+          <h1 className="mb-8 text-3xl lg:text-5xl font-medium text-neutral-900">Tags</h1>
           <ImageCard
             heading="Tags"
             bodyText=" Categorize or label content."
@@ -131,7 +131,7 @@ export default function Components() {
           />
         </div>
         <div>
-          <h1 className="text-5xl font-medium mb-8 text-neutral-900">
+          <h1 className="mb-8 text-3xl lg:text-5xl font-medium text-neutral-900">
             Togglers
           </h1>
           <ImageCard

@@ -5,7 +5,7 @@ export default function Button({ buttonText, backgroundColor, color }) {
   return (
     <NavLink to="/get-started">
       <button
-        className="px-8 py-4 font-normal text-2xl rounded-xl"
+        className="rounded-xl px-8 py-4 text-base font-normal min-[550px]:text-2xl"
         style={{ backgroundColor: backgroundColor, color: color }}
       >
         {buttonText}

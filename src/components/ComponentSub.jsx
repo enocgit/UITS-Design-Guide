@@ -35,12 +35,12 @@ export default function ComponentSub({ children, ...props }) {
 
   return (
     <div onClick={props.handleClick}>
-      <h2 className="font-medium text-2xl mb-5 text-neutral-800">
+      <h2 className="mb-5 text-xl font-medium text-neutral-800 md:text-2xl">
         {props.heading}
       </h2>
-      <div className=" p-10 bg-blue-50 border border-neutral-300 rounded-lg flex items-center justify-center">
+      <div className=" flex items-center justify-center rounded-lg border border-neutral-300 bg-blue-50 p-10">
         <div
-          className="flex gap-3 flex-wrap justify-center items-center"
+          className="flex flex-wrap items-center justify-center gap-3"
           style={{
             justifyContent: props.justifyContent,
             flexDirection: props.flexDirection,
@@ -93,7 +93,7 @@ export default function ComponentSub({ children, ...props }) {
           onClick={onClick} // handled by parent
         /> */}
       </div>
-      <p className="mt-4 mb-20">{props.footnote}</p>
+      <p className="mb-20 mt-4 text-sm md:text-base">{props.footnote}</p>
       {/* <ComponentModal
       // show={show}
       // onClose={onClose} // handled by modal component

@@ -28,7 +28,7 @@ export default function Typography() {
       <ComponentSub
         heading="Font Weight"
         footnote="The primary colors that represent our brand and should be used consistently across  and web pages."
-        // flexDirection="column"
+        flexDirection="column"
         gap="2rem"
       >
         <ComponentImage image={RegularType} width="10rem" heading="Regular">
@@ -59,14 +59,38 @@ export default function Typography() {
       <ComponentSub
         heading="Font Size"
         footnote="The primary colors that represent our brand and should be used consistently across  and web pages."
-        // flexDirection="column"
+        flexDirection="column"
         gap="2rem"
       >
-        <ComponentImage image={Heading1} width="16rem" heading="Heading 1">
+        <ComponentImage image={Caption} width="5rem" heading="Caption">
           <ComponentClipBoard
             name="Font Size"
             propertyName="font-size"
-            value="32px"
+            value="12px"
+          />
+          <ComponentClipBoard
+            name="Font Weight"
+            propertyName="font-weight"
+            value="300"
+          />
+        </ComponentImage>
+        <ComponentImage image={Body} width="6rem" heading="Body">
+          <ComponentClipBoard
+            name="Font Size"
+            propertyName="font-size"
+            value="16px"
+          />
+          <ComponentClipBoard
+            name="Font Weight"
+            propertyName="font-weight"
+            value="300"
+          />
+        </ComponentImage>
+        <ComponentImage image={Heading3} width="12rem" heading="Heading 3">
+          <ComponentClipBoard
+            name="Font Size"
+            propertyName="font-size"
+            value="19px"
           />
           <ComponentClipBoard
             name="Font Weight"
@@ -86,40 +110,16 @@ export default function Typography() {
             value="700"
           />
         </ComponentImage>
-        <ComponentImage image={Heading3} width="12rem" heading="Heading 3">
+        <ComponentImage image={Heading1} width="16rem" heading="Heading 1">
           <ComponentClipBoard
             name="Font Size"
             propertyName="font-size"
-            value="19px"
+            value="32px"
           />
           <ComponentClipBoard
             name="Font Weight"
             propertyName="font-weight"
             value="700"
-          />
-        </ComponentImage>
-        <ComponentImage image={Body} width="6rem" heading="Body">
-          <ComponentClipBoard
-            name="Font Size"
-            propertyName="font-size"
-            value="16px"
-          />
-          <ComponentClipBoard
-            name="Font Weight"
-            propertyName="font-weight"
-            value="300"
-          />
-        </ComponentImage>
-        <ComponentImage image={Caption} width="5rem" heading="Caption">
-          <ComponentClipBoard
-            name="Font Size"
-            propertyName="font-size"
-            value="12px"
-          />
-          <ComponentClipBoard
-            name="Font Weight"
-            propertyName="font-weight"
-            value="300"
           />
         </ComponentImage>
       </ComponentSub>
@@ -140,7 +140,7 @@ export default function Typography() {
             href="https://www.figma.com/file/BGlf7MWqu3IOL8cZQAj1Y9/Fathom-Design-System%3A-Typography-(Community)?type=design&node-id=2-116&t=fs4n8rGDV0jtxBr2-0"
             target="_blank"
             rel="noreferrer"
-            className="underline text-blue-900"
+            className="text-blue-900 underline"
           >
             Fathom Font System
           </a>

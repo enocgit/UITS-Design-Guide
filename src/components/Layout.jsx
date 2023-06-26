@@ -7,9 +7,9 @@ export default function Layout() {
   return (
     <>
       <Sidebar />
-      <div className="lg:flex gap-2">
+      <div className="gap-2 lg:flex">
         <HiddenSidebar />
-        <div className="w-12/12 lg:w-11/12 m-2">
+        <div className="w-12/12 m-2 lg:w-11/12">
           <Outlet />
         </div>
       </div>
